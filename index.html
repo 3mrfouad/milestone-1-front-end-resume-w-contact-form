@@ -7,20 +7,104 @@ Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
 Date of last edit: september xx, 2020 xx:xx am
 -->
-
+<!-- cSpell:disable -->
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- HTML META DATA -->
+    <meta name="description" content="Amr Fouad Resume" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Amr Fouad" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amr Fouad Resume</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AF Resume</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="js/scripts.js" defer></script>
-</head>
+  <body>
+    <header>
+      <h1>Amr Fouad</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <section class="container" id="objective">
+      <h2>Objective</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container" id="work-experience">
+      <h2>Work Experience</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container" id="eduction-background">
+      <h2>Eduction Background</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container" id="social-links">
+      <h2>Social Links</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
 
-</body>
+    <!-- CONTACT FORM SECTION -->
+    <section class="formcontainer">
+      <form action="#">
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
 
+        <label for="emailid">Email</label>
+        <input
+          type="text"
+          id="emailid"
+          name="emailid"
+          placeholder="Your email.."
+        />
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write an email.."
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
 </html>

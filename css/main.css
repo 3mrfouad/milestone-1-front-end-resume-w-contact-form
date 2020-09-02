@@ -1,10 +1,185 @@
-/*
-----------------------------
-Front-End Project DOCSTRING
-----------------------------
-Title: Front-End Project
+/*=============================================
+=      Front-End Project DOCSTRING            =
+=============================================*/
+
+/* Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september xx, 2020 xx:xx am
-*/
+Date of last edit: september xx, 2020 xx:xx am */
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+    HTML CSS RESET | IMPORT OTHER CSS FILES
+=============================================*/
+
 @import url("normalize.css");
+@import url("formstyling.css");
+
+/*=============================================
+        OUTLINES TO BE REMOVED LATER
+=============================================*/
+
+* {
+  outline: 1px solid #ff0000;
+}
+html {
+  outline: 1px solid #ff8800;
+}
+body {
+  outline: 1px solid #00ff00;
+  margin: 0 10% 10% 10%;
+}
+ul {
+  outline: 1px solid #0000ff;
+}
+li {
+  outline: 1px solid #b700ff;
+}
+nav {
+  outline: 1px solid #00ffff;
+}
+a {
+  outline: 1px solid #ffae00;
+}
+/* cspell:disable */
+
+/*=============================================
+=           HEADER SECTIONS                   =
+=============================================*/
+header {
+  background: #000000;
+  color: #ffffff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+header,
+section,
+ul {
+  border-radius: 0.5em;
+  max-width: 565px;
+  margin: 5%;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+li {
+  display: inline;
+  margin-right: 1em;
+}
+ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+/*=============================================
+=           RESUME SECTIONS                   =
+=============================================*/
+section:nth-of-type(odd) {
+  background-color: #e2c26b;
+  box-shadow: 10px 10px 50px 5px rgba(127, 190, 143, 0.747) inset;
+}
+section:nth-of-type(even) {
+  background-color: #ffffff;
+  box-shadow: 10px 10px 50px 5px rgb(236, 236, 236);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container h2 {
+  max-width: 565px;
+  margin: 5%;
+  width: 100%;
+  text-align: left;
+  margin: 0.25em 0 0.25em 0.35em;
+  text-transform: uppercase;
+  letter-spacing: -0.075em;
+  background-color: black;/* collapes */
+  color: white;/* collapes */
+}
+.container h2::after { /* collapes */
+  content: "\25be";
+  float: right;
+  transform: scale(1.5);
+  margin-right: 1em;
+}
+.container p {
+  max-width: 565px;
+  margin: 5%;
+  padding: 0.25em;
+  margin: 0.25em 0 0.25em 0.35em;
+  line-height: 1.5em;
+  /*   overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s; */
+}
+.resume-sec-btn {
+  font-size-adjust: 5vw;
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 0.25em;
+  outline-color: transparent;
+  float: right;
+  background-color: #000000;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.container p a:hover {
+  background-color: rgb(160, 160, 160);
+  color: #000000;
+}
+/*=============================================
+=            CONTACT FORM CSS                 =
+=============================================*/
+
+.formcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formcontainer form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.formcontainer form input[type="submit"] {
+  align-self: flex-end;
+  margin: 10%;
+}
+input[type="submit"]:hover {
+  background-color: #ffffff;
+}
+
+/*=============================================
+=            MEDIA QUERIES                =
+=============================================*/
+
+@media only screen and (min-width: 600px) {
+  html {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  header,
+  section,
+  ul {
+    max-width: 850px;
+  }
+  header {
+    max-height: 100px;
+  }
+  .container p {
+    max-width: 650px;
+  }
+}
