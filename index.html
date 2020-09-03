@@ -1,3 +1,4 @@
+<!-- cSpell:disable -->
 <!--
 ----------------------------
 Front-End Project DOCSTRING
@@ -7,148 +8,170 @@ Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
 Date of last edit: september xx, 2020 xx:xx am
 -->
-<!-- cSpell:disable -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- HTML META DATA -->
-    <meta name="description" content="Amr Fouad Resume" />
-    <meta name="keywords" content="HTML,CSS,JavaScript" />
-    <meta name="author" content="Amr Fouad" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amr Fouad Resume</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/scripts.js" defer></script>
-  </head>
-  <body>
-    <h1>Amr Fouad</h1>
-    <header>
-      <nav class='nav-bar'>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-    <section class="main-wrapper" >
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-address-card"></i> About</button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-bullseye"></i> Objective</button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-globe"></i> Professional Experience
-      </button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
 
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-user-graduate"></i> Education
-      </button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-certificate"></i></i> Licesnses and Certifications
-      </button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-hands-helping"></i> Volunteering</button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-industry"></i> Skills</button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
-    <section class="container">
-      <button type="button" class="accordion-btn">
-        <i class="fas fa-thumbs-up"></i> Testimonials</button>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-        <a href="#" class="resume-sec-btn">See all</a>
-      </p>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <!-- HTML META DATA -->
+  <meta name="description" content="Amr Fouad Resume" />
+  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="author" content="Amr Fouad" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amr Fouad Resume</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/scripts.js" defer></script>
+</head>
 
-    <!-- CONTACT FORM SECTION -->
-    <section class="formcontainer">
-        <form action="#">
-        <h2>Get in Touch</h2>
-        <label for="fname " class="screen-reader-text">Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Name" />
-        <label for="lname " class="screen-reader-text">Email</label>
-        <input type="text" id="lname" name="lastname" placeholder="Email" />
-        <label for="emailid" class="screen-reader-text">Subjet</label>
-        <input type="text" id="emailid" name="emailid" placeholder="Subjet" />
-        <label for="subject" class="screen-reader-text">Message</label>
-        <textarea id="subject" name="subject" placeholder="Message"></textarea>
-        <input type="submit" value="Submit" />
-      </form>
-    </section>
-  </section>
-    <aside class='side-bar'>
+<body>
+  <h1>Amr Fouad</h1>
+  <header>
+    <nav class='nav-bar'>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
+  </header>
+  <main>
+    <section class="main-wrapper">
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-address-card"></i> About</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-bullseye"></i> Objective</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-globe"></i> Professional Experience
+        </button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-user-graduate"></i> Education
+        </button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-certificate"></i></i> Licesnses and Certifications
+        </button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-hands-helping"></i> Volunteering</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-industry"></i> Skills</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-thumbs-up"></i> Testimonials</button>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          <a href="#" class="resume-sec-btn">See all</a>
+        </p>
+      </section>
+
+      <!-- CONTACT FORM SECTION -->
+      <section class="formcontainer">
+        <form action="#" id="contact-form">
+          <h2>Get in Touch</h2>
+          <label for="name " class="screen-reader-text">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+          <p class = 'form-error' id = 'nameerror'>Name is required.</p>
+          <label for="emailid" class="screen-reader-text">Email</label>
+          <input type="text" id="emailid" name="emailid" placeholder="Email" />
+          <p class = 'form-error' id = 'emailerror'>Email is required.</p>
+          <p class = 'form-error' id = 'emailformaterror'>Enter valid Email ID.</p>
+          <label for="subject" class="screen-reader-text">Subjet</label>
+          <input type="text" id="subject" name="subject" placeholder="Subjet" />
+          <p class = 'form-error' id = 'subjecterror'>Subject is required</p>
+          <label for="message" class="screen-reader-text">Message</label>
+          <textarea id="message" name="message" placeholder="Message"></textarea>
+          <p class = 'form-error' id = 'messageerror'>Message is required</p>
+          <p class = 'form-error' id = 'swearworderror'>Inappropriate words won't be tolerated</p>
+          <input type="submit" value="Send Message" />
+        </form>
+        <div class= 'contact'>
+          <div class='contact-info'>
+            <h2>Contact Info</h2>
+            <p><i class="fas fa-phone"></i> 780-123-4567</p>
+            <a href="info@noemail.com"><i class="fa fa-envelope"></i> info@noemail.com</a>
+            <p><i class="fab fa fa-map-marker"></i> 01 02ST SW,Edmoton,AB A1B2C3,CA</p>
+          </div>
+          <div class='socialmedia'>
+            <h2>Follow & Connect On</h2>
+            <a href="https://ca.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram-square"></i></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <aside class='side-bar'>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      </nav>
     </aside>
   </main>
-    <footer>
-      <p>&copy; Copyright Amr Fouad 2020</p>
-      <i class="fab fa-linkedin"></i>
-    </footer>
-  </body>
+  <footer>
+    <p>&copy; Copyright Amr Fouad 2020</p>
+  </footer>
+</body>
 
 </html>

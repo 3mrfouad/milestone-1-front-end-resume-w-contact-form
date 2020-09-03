@@ -1,3 +1,4 @@
+/* cspell:disable */
 /*=============================================
 =      Front-End Project DOCSTRING            =
 =============================================*/
@@ -20,11 +21,12 @@ Date of last edit: september xx, 2020 xx:xx am */
         OUTLINES TO BE REMOVED LATER
 =============================================*/
 * {
-  outline: 1px solid #ff0000;
-  font-family: "Barlow", sans-serif;
+  /*   outline: 1px solid #ff0000;
+ */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #92bace;
 }
-h1 {
+/* h1 {
   outline: 1px solid #d0ff00;
 }
 ul {
@@ -59,8 +61,12 @@ main {
 .main-wrapper {
   outline: 1px solid #54a8c2;
 }
-
-/* cspell:disable */
+div {
+  outline: 1px solid #00ff62;
+}
+form {
+  outline: 1px solid #0004ff;
+} */
 
 /*=============================================
 =           HEADER SECTIONS                   =
@@ -70,7 +76,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:100%;
+  width: 100%;
+}
+i {
+  font-size: inherit;
 }
 h1 {
   max-width: 565px;
@@ -174,7 +183,6 @@ section {
   display: none;
 }
 .resume-sec-btn {
-  font-size-adjust: 5vw;
   width: 20%;
   height: auto;
   text-align: center;
@@ -198,48 +206,128 @@ section {
 .formcontainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 .formcontainer h2 {
   width: 100%;
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+  margin: 5% 0 5% 0;
 }
 .formcontainer form {
-  width: 50%;
+  width: 100%;
   display: flex;
   flex-direction: column;
+  order: 1;
 }
 .formcontainer form input[type="submit"] {
-  align-self: flex-end;
-  margin: 10%;
   border: none;
-  font-size-adjust: 5vw;
-  width: 50%;
-  height: auto;
+  height: 22px;
   text-align: center;
-  margin: 0.5em 0 0.5em 0.5em;
-  padding: 0 0.5em 0 0.5em;
   border-radius: 0.25em;
   outline-color: transparent;
   cursor: pointer;
   background: #a0a0a0;
   color: #000000;
+  border-radius: 10px 0 10px 0;
 }
 .formcontainer form input[type="submit"]:hover {
   background: #000000;
   color: #ffffff;
 }
-/*=============================================
-=            FOOTER                =
-=============================================*/
-footer {
+.formcontainer form input {
+  margin: 5% 10% 0 0;
+  height: 22px;
+  border-radius: 10px 0 10px 0;
+  text-indent: 1em;
+  color:#000000;
+  font-weight: 700;
+  font-weight: 500;
 }
-i{
-    font-size:inherit;
+.formcontainer form input::placeholder{
+  color: #808080;
+  font-weight: 700;
+}
+textarea {
+  margin: 5% 10% 0 0;
+  height: 80px;
+  border-radius: 10px 0 10px 0;
+  text-indent: 1em;
+  color:#000000;
+  font-weight: 500;
+
+}
+.formcontainer form textarea::placeholder{
+  color: #808080;
+  font-weight: 700;
+  
+
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 5% 0 0;
+  justify-content: space-between;
+  order: 2;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 5% 0;
+}
+.socialmedia {
+  display: inline-block;
+  order: 1;
+  padding: 0 0 25% 0;
+}
+.contact-info p,
+.contact-info a {
+  margin: 0 0 2.5% 0;
+}
+.socialmedia i {
+  font-size: 1.5em;
+  letter-spacing: 1em;
+  justify-self: flex-end;
 }
 
+/*=============================================
+=            FORM ERROR MESSAGES              =
+=============================================*/
+.form-error {
+  margin: 5% 0 0 0;
+  padding: 2.5%;
+  width: max-content;
+  text-align: left;
+  background-color: #ff0000;
+  font-style: italic;
+  color: #ffffff;
+  font-size: .75em;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  position: relative;
+  display: none;
+}
+.form-error::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ff0000;
+  position: absolute;
+  top:-10px;
+}
+.empty-field-error {
+  background-color: #ffdddd;
+  outline-style: dotted;
+  outline-color: #ff0000;
+}
+/*=============================================
+=                 FOOTER                      =
+=============================================*/
+footer {
+  max-width: 565px;
+  width: 100%;
+  text-align: center;
+}
 /*=============================================
 =            MEDIA QUERIES                =
 =============================================*/
@@ -266,4 +354,11 @@ i{
   .accordion-btn {
     max-width: 650px;
   }
+  .formcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.formcontainer form {
+  width: 50%;}
+
 } */
