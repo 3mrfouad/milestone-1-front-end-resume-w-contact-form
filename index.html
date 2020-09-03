@@ -21,11 +21,10 @@ Date of last edit: september xx, 2020 xx:xx am
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/scripts.js" defer></script>
   </head>
-
   <body>
+    <h1>Amr Fouad</h1>
     <header>
-      <h1>Amr Fouad</h1>
-      <nav>
+      <nav class='nav-bar'>
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
@@ -33,9 +32,44 @@ Date of last edit: september xx, 2020 xx:xx am
         </ul>
       </nav>
     </header>
+    <main>
+    <section class="main-wrapper" >
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-address-card"></i> About</button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-bullseye"></i> Objective</button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-globe"></i> Professional Experience
+      </button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
 
-    <section class="container" id="objective">
-      <h2>Objective</h2>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-user-graduate"></i> Education
+      </button>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
         nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
@@ -43,8 +77,11 @@ Date of last edit: september xx, 2020 xx:xx am
         <a href="#" class="resume-sec-btn">See all</a>
       </p>
     </section>
-    <section class="container" id="work-experience">
-      <h2>Work Experience</h2>
+    
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-certificate"></i></i> Licesnses and Certifications
+      </button>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
         nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
@@ -52,8 +89,9 @@ Date of last edit: september xx, 2020 xx:xx am
         <a href="#" class="resume-sec-btn">See all</a>
       </p>
     </section>
-    <section class="container" id="eduction-background">
-      <h2>Eduction Background</h2>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-hands-helping"></i> Volunteering</button>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
         nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
@@ -61,8 +99,19 @@ Date of last edit: september xx, 2020 xx:xx am
         <a href="#" class="resume-sec-btn">See all</a>
       </p>
     </section>
-    <section class="container" id="social-links">
-      <h2>Social Links</h2>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-industry"></i> Skills</button>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
+        nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
+        fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+        <a href="#" class="resume-sec-btn">See all</a>
+      </p>
+    </section>
+    <section class="container">
+      <button type="button" class="accordion-btn">
+        <i class="fas fa-thumbs-up"></i> Testimonials</button>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
         nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
@@ -73,38 +122,33 @@ Date of last edit: september xx, 2020 xx:xx am
 
     <!-- CONTACT FORM SECTION -->
     <section class="formcontainer">
-      <form action="#">
-        <label for="fname">First Name</label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="Your name.."
-        />
-        <label for="lname">Last Name</label>
-        <input
-          type="text"
-          id="lname"
-          name="lastname"
-          placeholder="Your last name.."
-        />
-
-        <label for="emailid">Email</label>
-        <input
-          type="text"
-          id="emailid"
-          name="emailid"
-          placeholder="Your email.."
-        />
-
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write an email.."
-        ></textarea>
+        <form action="#">
+        <h2>Get in Touch</h2>
+        <label for="fname " class="screen-reader-text">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Name" />
+        <label for="lname " class="screen-reader-text">Email</label>
+        <input type="text" id="lname" name="lastname" placeholder="Email" />
+        <label for="emailid" class="screen-reader-text">Subjet</label>
+        <input type="text" id="emailid" name="emailid" placeholder="Subjet" />
+        <label for="subject" class="screen-reader-text">Message</label>
+        <textarea id="subject" name="subject" placeholder="Message"></textarea>
         <input type="submit" value="Submit" />
       </form>
     </section>
+  </section>
+    <aside class='side-bar'>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    </aside>
+  </main>
+    <footer>
+      <p>&copy; Copyright Amr Fouad 2020</p>
+      <i class="fab fa-linkedin"></i>
+    </footer>
   </body>
+
 </html>

@@ -52,3 +52,15 @@ Layout he page structure (skeleton)
 /* Start */
 /* Event listener */
 /* Functions*/
+
+/*
+*==================================================
+                CARDS ACCORDION LOGIC
+*==================================================
+*/
+
+document.querySelectorAll(".accordion-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("accordion-btn-active");
+  });
+});

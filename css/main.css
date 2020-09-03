@@ -14,109 +14,164 @@ Date of last edit: september xx, 2020 xx:xx am */
 =============================================*/
 
 @import url("normalize.css");
-@import url("formstyling.css");
+@import url("all.css");
 
 /*=============================================
         OUTLINES TO BE REMOVED LATER
 =============================================*/
-
 * {
   outline: 1px solid #ff0000;
+  font-family: "Barlow", sans-serif;
+  color: #92bace;
 }
-html {
-  outline: 1px solid #ff8800;
-}
-body {
-  outline: 1px solid #00ff00;
-  margin: 0 10% 10% 10%;
+h1 {
+  outline: 1px solid #d0ff00;
 }
 ul {
   outline: 1px solid #0000ff;
 }
 li {
-  outline: 1px solid #b700ff;
+  outline: 1px solid #00ff2a;
 }
 nav {
-  outline: 1px solid #00ffff;
+  outline: 1px solid #c0e0e0;
 }
 a {
-  outline: 1px solid #ffae00;
+  outline: 1px solid #d5e21d;
 }
+
+body {
+  outline: 1px solid #a5c977;
+}
+header {
+  outline: 1px solid #00ffff;
+}
+
+footer {
+  outline: 1px solid #00feff;
+}
+section {
+  outline: 1px solid #008cff;
+}
+main {
+  outline: 1px solid #f50404;
+}
+.main-wrapper {
+  outline: 1px solid #54a8c2;
+}
+
 /* cspell:disable */
 
 /*=============================================
 =           HEADER SECTIONS                   =
 =============================================*/
+body {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+}
+h1 {
+  max-width: 565px;
+  width: 100%;
+  text-align: center;
+}
 header {
-  background: #000000;
-  color: #ffffff;
+  background-color: #000000;
+  max-width: 565px;
+  width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
 }
-header,
-section,
-ul {
-  border-radius: 0.5em;
-  max-width: 565px;
-  margin: 5%;
-}
-h1 {
-  text-align: center;
-}
-ul {
+.nav-bar {
   list-style-type: none;
   text-align: center;
 }
-li {
+.nav-bar li {
   display: inline;
   margin-right: 1em;
 }
-ul li a {
+.nav-bar a {
   text-decoration: none;
-  color: whitesmoke;
 }
+main {
+  max-width: 565px;
+  display: flex;
+  flex-direction: row;
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  margin: 0;
+}
+section {
+  max-width: 565px;
+  margin: 2%;
+}
+.side-bar {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 2%; /* align with sections */
+}
+.side-bar li {
+  display: block;
+  padding-bottom: 1em;
+}
+.side-bar a {
+  text-decoration: none;
+}
+
 /*=============================================
 =           RESUME SECTIONS                   =
 =============================================*/
-section:nth-of-type(odd) {
-  background-color: #e2c26b;
-  box-shadow: 10px 10px 50px 5px rgba(127, 190, 143, 0.747) inset;
-}
-section:nth-of-type(even) {
-  background-color: #ffffff;
-  box-shadow: 10px 10px 50px 5px rgb(236, 236, 236);
-}
 .container {
   display: flex;
   flex-wrap: wrap;
 }
-.container h2 {
+.accordion-btn {
   max-width: 565px;
-  margin: 5%;
   width: 100%;
   text-align: left;
-  margin: 0.25em 0 0.25em 0.35em;
+  margin: 0.25em 0.25em 0 0.25em;
+  padding: 2%;
   text-transform: uppercase;
-  letter-spacing: -0.075em;
-  background-color: black;/* collapes */
-  color: white;/* collapes */
+  letter-spacing: -0.025em;
+  /* accordion */
+  background-color: #333333;
+  cursor: pointer;
+  transition: background 650ms;
 }
-.container h2::after { /* collapes */
-  content: "\25be";
+/* accordion */
+.accordion-btn::after {
+  content: "\25b4";
   float: right;
   transform: scale(1.5);
-  margin-right: 1em;
+}
+/* accordion */
+.accordion-btn-active {
+  background: #555555;
+}
+/* accordion */
+.accordion-btn-active::after {
+  content: "\25be";
 }
 .container p {
   max-width: 565px;
-  margin: 5%;
-  padding: 0.25em;
-  margin: 0.25em 0 0.25em 0.35em;
+  margin: 0 0.25em 0.25em 0.25em;
+  padding-left: 0.25em;
   line-height: 1.5em;
-  /*   overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s; */
+  /* accordion */
+  display: block;
+  max-height: auto;
+  background-color: #eeeeee;
+  color: #000000;
+}
+/* accordion */
+.accordion-btn-active + p {
+  display: none;
 }
 .resume-sec-btn {
   font-size-adjust: 5vw;
@@ -128,44 +183,68 @@ section:nth-of-type(even) {
   border-radius: 0.25em;
   outline-color: transparent;
   float: right;
-  background-color: #000000;
   text-decoration: none;
-  color: #ffffff;
   cursor: pointer;
+  background-color: #a0a0a0;
+  color: #000000;
 }
 .container p a:hover {
-  background-color: rgb(160, 160, 160);
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
 }
 /*=============================================
 =            CONTACT FORM CSS                 =
 =============================================*/
-
 .formcontainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.formcontainer h2 {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
 }
 .formcontainer form {
   width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: center;
 }
 .formcontainer form input[type="submit"] {
   align-self: flex-end;
   margin: 10%;
+  border: none;
+  font-size-adjust: 5vw;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin: 0.5em 0 0.5em 0.5em;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 0.25em;
+  outline-color: transparent;
+  cursor: pointer;
+  background: #a0a0a0;
+  color: #000000;
 }
-input[type="submit"]:hover {
-  background-color: #ffffff;
+.formcontainer form input[type="submit"]:hover {
+  background: #000000;
+  color: #ffffff;
+}
+/*=============================================
+=            FOOTER                =
+=============================================*/
+footer {
+}
+i{
+    font-size:inherit;
 }
 
 /*=============================================
 =            MEDIA QUERIES                =
 =============================================*/
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   html {
     display: flex;
     align-content: center;
@@ -175,6 +254,8 @@ input[type="submit"]:hover {
   section,
   ul {
     max-width: 850px;
+    align-content: center;
+    justify-content: center;
   }
   header {
     max-height: 100px;
@@ -182,4 +263,7 @@ input[type="submit"]:hover {
   .container p {
     max-width: 650px;
   }
-}
+  .accordion-btn {
+    max-width: 650px;
+  }
+} */
