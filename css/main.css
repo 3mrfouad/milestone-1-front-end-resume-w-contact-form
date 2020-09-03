@@ -15,11 +15,24 @@ Date of last edit: september xx, 2020 xx:xx am */
 =============================================*/
 
 @import url("normalize.css");
+/**
+ * Citation: Borrowed code to reset browsers defaults.
+ * Source: https://necolas.github.io/normalize.css/
+ * Reason: Common practice to use one of the popular browsers reset .css files available online
+ * More details: The normalize.css file reset the styling so that differences due to various
+ * browsers rendering techniques don't impact how my webpage look like.
+ */
 @import url("all.css");
+/**
+ * Citation: Css code that must be in the project folders per FontAwesome documentation.
+ * Source: https://fontawesome.com
+ * Reason: Import FontAwesome icons into the project to fulfill the requirements/challanges
+ */
 
 /*=============================================
         OUTLINES TO BE REMOVED LATER
 =============================================*/
+
 * {
   /*   outline: 1px solid #ff0000;
  */
@@ -71,6 +84,7 @@ form {
 /*=============================================
 =           HEADER SECTIONS                   =
 =============================================*/
+
 body {
   background-color: #000000;
   display: flex;
@@ -90,8 +104,8 @@ header {
   background-color: #000000;
   max-width: 565px;
   width: 100%;
-  position: -webkit-sticky; /* Use of "Position" permitted per assignment guidelines  */
-  position: sticky;         /* Use of "Position" permitted per assignment guidelines  */
+  position: -webkit-sticky; /*! Use of "Position" permitted per assignment guidelines  */
+  position: sticky; /*! Use of "Position" permitted per assignment guidelines  */
   top: 0px;
 }
 .nav-bar {
@@ -136,6 +150,7 @@ section {
 /*=============================================
 =           RESUME SECTIONS                   =
 =============================================*/
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +164,8 @@ section {
   text-transform: uppercase;
   letter-spacing: -0.025em;
   /* accordion */
-  background-color: #333333;
+  background-color: #3086cc;
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: background 650ms;
 }
@@ -200,9 +216,11 @@ section {
   background-color: #000000;
   color: #ffffff;
 }
+
 /*=============================================
 =            CONTACT FORM CSS                 =
 =============================================*/
+
 .formcontainer {
   display: flex;
   flex-direction: column;
@@ -221,41 +239,43 @@ section {
 }
 .formcontainer form input[type="submit"] {
   border: none;
-  height: 22px;
+  height: 50px;
   text-align: center;
+  font-weight: 700;
   border-radius: 0.25em;
   outline-color: transparent;
   cursor: pointer;
   background: #a0a0a0;
-  color: #000000;
+  color: #201f1f;
   border-radius: 10px 0 10px 0;
 }
 .formcontainer form input[type="submit"]:hover {
-  background: #000000;
+  background: #3086cc;
   color: #ffffff;
 }
 .formcontainer form input {
   margin: 5% 10% 0 0;
-  height: 22px;
+  height: 50px;
   border-radius: 10px 0 10px 0;
-  text-indent: 1em;
-  color:#000000;
+  padding: 1em;
+  color: #000000;
   font-weight: 700;
   font-weight: 500;
 }
-.formcontainer form input::placeholder{
+.formcontainer form input::placeholder {
   color: #808080;
   font-weight: 700;
 }
 textarea {
   margin: 5% 10% 0 0;
-  height: 80px;
+  padding: 1em;
+  height: 10em;
   border-radius: 10px 0 10px 0;
-  text-indent: 1em;
-  color:#000000;
+  color: #000000;
   font-weight: 500;
+  resize: vertical;
 }
-.formcontainer form textarea::placeholder{
+.formcontainer form textarea::placeholder {
   color: #808080;
   font-weight: 700;
 }
@@ -269,7 +289,7 @@ textarea {
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin: 0 0 5% 0;
+  margin: 0 0 2.5% 0;
 }
 .socialmedia {
   display: inline-block;
@@ -289,6 +309,7 @@ textarea {
 /*=============================================
 =            FORM ERROR MESSAGES              =
 =============================================*/
+
 .form-error {
   margin: 5% 0 0 0;
   padding: 1.5%;
@@ -297,9 +318,9 @@ textarea {
   background-color: #ff0000;
   font-style: italic;
   color: #ffffff;
-  font-size: .75em;
+  font-size: 0.75em;
   box-shadow: 1px 1px 1px #aaaaaa;
-  position: relative;     /* Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
+  position: relative; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
   display: none;
 }
 .form-error::before {
@@ -309,8 +330,8 @@ textarea {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #ff0000;
-  position: absolute; /* Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
-  top:-10px;
+  position: absolute; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
+  top: -10px;
 }
 .empty-field-error {
   background-color: #ffdddd;
@@ -322,11 +343,14 @@ textarea {
 /*=============================================
 =                 FOOTER                      =
 =============================================*/
+
 footer {
   max-width: 565px;
   width: 100%;
   text-align: center;
+  margin: 0 0 5% 0;
 }
+
 /*=============================================
 =            MEDIA QUERIES                =
 =============================================*/

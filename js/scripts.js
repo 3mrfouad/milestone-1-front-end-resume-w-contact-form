@@ -10,15 +10,6 @@ Date of last edit: september xx, 2020 xx:xx am
 */
 /*
 *==================================================
-                JS Logic
-*==================================================
-*/
-/* Global Variables */
-/* Start */
-/* Event listener */
-/* Functions*/
-/*
-*==================================================
             GLOBAL VARIABLES DEFINITION
 *==================================================
 */
@@ -49,6 +40,7 @@ document.body.onload = InitializePage();
                 CARDS ACCORDION LOGIC
 *==================================================
 */
+
 /* EVENT LISTENER */
 document.querySelectorAll(".accordion-btn").forEach((button) => {
   button.addEventListener("click", () => {
@@ -61,6 +53,7 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
             MAILTO VIA CONTACT FORM LOGIC
 *==================================================
 */
+
 /* EVENT LISTENER */
 getInTouchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -75,6 +68,7 @@ getInTouchForm.addEventListener("submit", (event) => {
             ON LOAD INITIALIZATION FUNCTION
 *==================================================
 */
+
 function InitializePage() {
   name.value = "";
   emailID.value = "";
@@ -87,6 +81,7 @@ function InitializePage() {
             FORM VALIDATION FUNCTION
 *==================================================
 */
+
 function GetInTouchFormValidation() {
   const swearWords = ["feldercarb", "frack", "skinjob", "vulgacarb"];
   let errorsCntr = 0;
@@ -181,12 +176,12 @@ function ValidateEmail() {
  * Uppercase (A-Z) and lowercase (a-z) English letters.
  * Digits (0-9).
  * Characters ! # $ % & ' * + - / = ? ^ _ ` { | } ~
- * Character . ( period, dot or fullstop) provided that it is not the first or last character and it will not come one after the other.
+ * Character . ( period, dot or full-stop) provided that it is not the first or last character and it will not come one after the other.
  *
  * The domain name [for example com, org, net, in, us, info] part contains letters, digits, hyphens, and dots.
  *
- * More details: I tried to understand more about regular expressions but apparantely it is a mini programming
- * language by itself, I have skimmed through O'REILLY book called "Introducin Regular Expressions" and I got the
+ * More details: I tried to understand more about regular expressions but apparently it is a mini programming
+ * language by itself, I have skimmed through O'REILLY book called "Introducing Regular Expressions" and I got the
  * primary idea, I guess I will need more time if mastering regular expressions so I can write codes on my own.
  *
  * Alternative solution: I could have written alternative code to validate the email ID using regular JavaScript

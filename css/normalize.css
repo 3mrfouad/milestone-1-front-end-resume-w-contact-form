@@ -1,3 +1,4 @@
+/* cspell:disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Resting the box sizing to boarder-box */
 
@@ -194,6 +195,7 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+  outline: none;
 }
 
 /**
