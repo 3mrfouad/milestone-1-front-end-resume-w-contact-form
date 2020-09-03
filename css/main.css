@@ -90,8 +90,8 @@ header {
   background-color: #000000;
   max-width: 565px;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  position: -webkit-sticky; /* Use of "Position" permitted per assignment guidelines  */
+  position: sticky;         /* Use of "Position" permitted per assignment guidelines  */
   top: 0px;
 }
 .nav-bar {
@@ -254,13 +254,10 @@ textarea {
   text-indent: 1em;
   color:#000000;
   font-weight: 500;
-
 }
 .formcontainer form textarea::placeholder{
   color: #808080;
   font-weight: 700;
-  
-
 }
 .contact {
   display: flex;
@@ -294,7 +291,7 @@ textarea {
 =============================================*/
 .form-error {
   margin: 5% 0 0 0;
-  padding: 2.5%;
+  padding: 1.5%;
   width: max-content;
   text-align: left;
   background-color: #ff0000;
@@ -302,23 +299,25 @@ textarea {
   color: #ffffff;
   font-size: .75em;
   box-shadow: 1px 1px 1px #aaaaaa;
-  position: relative;
+  position: relative;     /* Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
   display: none;
 }
 .form-error::before {
   content: "";
   width: 0;
   height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid #ff0000;
-  position: absolute;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ff0000;
+  position: absolute; /* Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
   top:-10px;
 }
 .empty-field-error {
   background-color: #ffdddd;
-  outline-style: dotted;
-  outline-color: #ff0000;
+  border-style: dotted;
+  border-color: #ff0000;
+  border-width: 2px;
+  border-radius: 10px 0 10px 0;
 }
 /*=============================================
 =                 FOOTER                      =
