@@ -1,4 +1,3 @@
-<!-- cSpell:disable -->
 <!--
 ----------------------------
 Front-End Project DOCSTRING
@@ -24,15 +23,30 @@ Date of last edit: september xx, 2020 xx:xx am
 </head>
 
 <body>
-  <h1>Amr Fouad</h1>
   <header>
-    <nav class='nav-bar'>
+    <!-- Overlay Nav Menu Start-->
+    <nav id="overlay-nav" class="overlay">
+      <a href="#" id="closebtn">&times;</a>
+      <ul class="overlay-nav-content">
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-user-circle"></i></i> About</a>
+        <a href="#"><i class="fas fa-file"></i> Resume</a>
+        <a href="#"><i class="fas fa-thumbs-up"></i> Testimonials</a>
+        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+      </ul>
+    </nav>
+    <div id='header-nav'>
+      <h1>Amr Fouad</h1>
+      <p id="openbtn">&#9776;</p>
+    </div>
+    <!-- Overlay Nav Menu End-->
+    <!--     <nav class='nav-bar'>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </header>
   <main>
     <section class="main-wrapper">
@@ -40,9 +54,10 @@ Date of last edit: september xx, 2020 xx:xx am
         <button type="button" class="accordion-btn">
           <i class="fas fa-address-card"></i> About</button>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          Accomplished professional with 14 years of expertise in Operations, Maintenance, and QHSE in the field and
+          workshop, delivering innovation and sustainability of drilling and evaluation equipment. Always honor
+          result-orientation, discipline, living up to time-constraints, responsibilities, and work pressure, team
+          building, and leadership as main keys to sustainable outcomes.
           <a href="#" class="resume-sec-btn">See all</a>
         </p>
       </section>
@@ -50,9 +65,7 @@ Date of last edit: september xx, 2020 xx:xx am
         <button type="button" class="accordion-btn">
           <i class="fas fa-bullseye"></i> Objective</button>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          Seeking career in the Tech Industry as software Engineer leveraging my education
           <a href="#" class="resume-sec-btn">See all</a>
         </p>
       </section>
@@ -73,16 +86,14 @@ Date of last edit: september xx, 2020 xx:xx am
           <i class="fas fa-user-graduate"></i> Education
         </button>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
+          Bachelor of Electronics and Telecommunications Engineering, Cairo University, Egypt, 2006
           <a href="#" class="resume-sec-btn">See all</a>
         </p>
       </section>
 
       <section class="container">
         <button type="button" class="accordion-btn">
-          <i class="fas fa-certificate"></i></i> Licesnses and Certifications
+          <i class="fas fa-certificate"></i></i> Licenses and Certifications
         </button>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
@@ -103,7 +114,7 @@ Date of last edit: september xx, 2020 xx:xx am
       </section>
       <section class="container">
         <button type="button" class="accordion-btn">
-          <i class="fas fa-industry"></i> Skills</button>
+          <i class="fas fa-industry"></i> Technical Skills</button>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
           nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
@@ -133,7 +144,7 @@ Date of last edit: september xx, 2020 xx:xx am
           <input type="text" id="emailid" name="emailid" placeholder="Email" />
           <p class='form-error' id='emailerror'>Email is required.</p>
           <p class='form-error' id='emailformaterror'>Enter valid Email ID.</p>
-          <label for="subject" class="screen-reader-text">Subjet</label>
+          <label for="subject" class="screen-reader-text">Subject</label>
           <input type="text" id="subject" name="subject" placeholder="Subjet" />
           <p class='form-error' id='subjecterror'>Subject is required</p>
           <label for="message" class="screen-reader-text">Message</label>
@@ -147,27 +158,27 @@ Date of last edit: september xx, 2020 xx:xx am
             <h2>Contact Info</h2>
             <p><i class="fas fa-phone"></i> 780-123-4567</p>
             <a href="info@noemail.com"><i class="fa fa-envelope"></i> info@noemail.com</a>
-            <p><i class="fab fa fa-map-marker"></i> 01 02ST SW,Edmoton,AB A1B2C3,CA</p>
+            <p><i class="fab fa fa-map-marker"></i> 01 02ST SW,Edmonton,AB A1B2C3,CA</p>
           </div>
           <div class='socialmedia'>
             <h2>Follow & Connect On</h2>
             <a href="https://ca.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
             <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
             <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram-square"></i></a>
           </div>
         </div>
       </section>
     </section>
-    <aside class='side-bar'>
+    <!--     <aside class='side-bar'>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
       </nav>
-    </aside>
+    </aside> -->
   </main>
   <footer>
     <p>&copy; Copyright Amr Fouad 2020</p>

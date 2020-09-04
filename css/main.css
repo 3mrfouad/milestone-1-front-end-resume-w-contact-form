@@ -34,8 +34,7 @@ Date of last edit: september xx, 2020 xx:xx am */
 =============================================*/
 
 * {
-  /*   outline: 1px solid #ff0000;
- */
+  outline: 1px solid #ff0000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #92bace;
 }
@@ -99,25 +98,15 @@ h1 {
   max-width: 565px;
   width: 100%;
   text-align: center;
+  color: #f1f1f1;
 }
 header {
-  background-color: #000000;
+  background-color: #0073b1;
   max-width: 565px;
   width: 100%;
-  position: -webkit-sticky; /*! Use of "Position" permitted per assignment guidelines  */
-  position: sticky; /*! Use of "Position" permitted per assignment guidelines  */
+  position: -webkit-sticky; /*! Use of "Position" permitted per assignment guidelines in nav  */
+  position: sticky; /*! Use of "Position" permitted per assignment guidelines in nav  */
   top: 0px;
-}
-.nav-bar {
-  list-style-type: none;
-  text-align: center;
-}
-.nav-bar li {
-  display: inline;
-  margin-right: 1em;
-}
-.nav-bar a {
-  text-decoration: none;
 }
 main {
   max-width: 565px;
@@ -134,17 +123,8 @@ section {
   max-width: 565px;
   margin: 2%;
 }
-.side-bar {
-  list-style-type: none;
-  text-align: center;
-  margin-top: 2%; /* align with sections */
-}
-.side-bar li {
-  display: block;
-  padding-bottom: 1em;
-}
-.side-bar a {
-  text-decoration: none;
+section button i {
+  color: #f1f1f1;
 }
 
 /*=============================================
@@ -164,8 +144,9 @@ section {
   text-transform: uppercase;
   letter-spacing: -0.025em;
   /* accordion */
-  background-color: #3086cc;
-  color: rgb(255, 255, 255);
+  background-color: #0073b1;
+  font-weight: 700;
+  color: #f1f1f1;
   cursor: pointer;
   transition: background 650ms;
 }
@@ -177,7 +158,7 @@ section {
 }
 /* accordion */
 .accordion-btn-active {
-  background: #555555;
+  background: #92bace;
 }
 /* accordion */
 .accordion-btn-active::after {
@@ -214,7 +195,7 @@ section {
 }
 .container p a:hover {
   background-color: #000000;
-  color: #ffffff;
+  color: #f1f1f1;
 }
 
 /*=============================================
@@ -227,9 +208,9 @@ section {
 }
 .formcontainer h2 {
   width: 100%;
-  color: #ffffff;
+  color: #f1f1f1;
   text-align: left;
-  margin: 5% 0 5% 0;
+  margin: 5% 0 5% 2%;
 }
 .formcontainer form {
   width: 100%;
@@ -251,15 +232,14 @@ section {
 }
 .formcontainer form input[type="submit"]:hover {
   background: #3086cc;
-  color: #ffffff;
+  color: #f1f1f1;
 }
 .formcontainer form input {
-  margin: 5% 10% 0 0;
+  margin: 5% 5% 0 2%;
   height: 50px;
   border-radius: 10px 0 10px 0;
   padding: 1em;
   color: #000000;
-  font-weight: 700;
   font-weight: 500;
 }
 .formcontainer form input::placeholder {
@@ -267,7 +247,7 @@ section {
   font-weight: 700;
 }
 textarea {
-  margin: 5% 10% 0 0;
+  margin: 5% 5% 0 2%;
   padding: 1em;
   height: 10em;
   border-radius: 10px 0 10px 0;
@@ -289,12 +269,12 @@ textarea {
 .contact-info {
   display: flex;
   flex-direction: column;
-  margin: 0 0 2.5% 0;
+  margin: 0 0 2.5% 5%;
 }
 .socialmedia {
   display: inline-block;
   order: 1;
-  padding: 0 0 25% 0;
+  padding: 0 0 25% 5%;
 }
 .contact-info p,
 .contact-info a {
@@ -317,7 +297,7 @@ textarea {
   text-align: left;
   background-color: #ff0000;
   font-style: italic;
-  color: #ffffff;
+  color: #f1f1f1;
   font-size: 0.75em;
   box-shadow: 1px 1px 1px #aaaaaa;
   position: relative; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
@@ -385,3 +365,66 @@ footer {
   width: 50%;}
 
 } */
+
+/* OVERLAY NAV MENU CSS */
+.overlay {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  background-color: #000000e6;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-nav-content {
+  position: relative;
+  top: 15%;
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay i {
+  margin-right: 1%;
+  font-size: 36px;
+  color: #818181;
+  display: inline-block;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+.overlay #closebtn {
+  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+#openbtn {
+  color: #f1f1f1;
+}
+#header-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+h1 + p {
+  font-size: 30px;
+  cursor: pointer;
+  height: max-content;
+}

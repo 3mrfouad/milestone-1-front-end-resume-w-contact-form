@@ -133,8 +133,9 @@ function GetInTouchFormValidation() {
   }
   if (swearingCntr != 0) {
     swearWordErrorMsg.style.display = "block";
-    confirm(
-      "This is a professional website, and use of inappropriate words won't be tolerated"
+    alert(
+      "This is a professional website, and use of inappropriate words won't be tolerated",
+      "Warning"
     );
     errorsCntr++;
   } else {
@@ -187,3 +188,22 @@ function ValidateEmail() {
  * Alternative solution: I could have written alternative code to validate the email ID using regular JavaScript
  * loops and decision syntax but it would have been much longer of a code.
  */
+
+/*
+*==================================================
+            OVERLAY NAV MENU LOGIC
+*==================================================
+*/
+
+const closeBtn = document.getElementById("closebtn");
+const openBtn = document.getElementById("openbtn");
+
+closeBtn.addEventListener("click", closeNav);
+openBtn.addEventListener("click", openNav);
+
+function closeNav() {
+  document.getElementById("overlay-nav").style.height  = "0%";
+}
+function openNav() {
+  document.getElementById("overlay-nav").style.height  = "100%";
+}
