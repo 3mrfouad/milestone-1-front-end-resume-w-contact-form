@@ -10,6 +10,8 @@ Date of last edit: september xx, 2020 xx:xx am
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- HEAD -->
+
 <head>
   <meta charset="UTF-8" />
   <!-- HTML META DATA -->
@@ -22,8 +24,11 @@ Date of last edit: september xx, 2020 xx:xx am
   <script src="js/scripts.js" defer></script>
 </head>
 
+<!-- BODY -->
+
 <body>
   <header>
+
     <!-- Overlay Nav Menu Start-->
     <nav id="overlay-nav" class="overlay">
       <a href="#" id="closebtn">&times;</a>
@@ -31,157 +36,536 @@ Date of last edit: september xx, 2020 xx:xx am
         <a href="#"><i class="fas fa-home"></i> Home</a>
         <a href="#"><i class="fas fa-user-circle"></i></i> About</a>
         <a href="#"><i class="fas fa-file"></i> Resume</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
         <a href="#"><i class="fas fa-thumbs-up"></i> Testimonials</a>
         <a href="#"><i class="fas fa-envelope"></i> Contact</a>
       </ul>
     </nav>
-    <div id='header-nav'>
+    <div id="header-nav">
       <h1>Amr Fouad</h1>
       <p id="openbtn">&#9776;</p>
     </div>
     <!-- Overlay Nav Menu End-->
-    <!--     <nav class='nav-bar'>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav> -->
+
   </header>
+
+  <!-- MAIN -->
+
   <main>
     <section class="main-wrapper">
+
+      <!-- ABOUT SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
           <i class="fas fa-address-card"></i> About</button>
-        <p>
-          Accomplished professional with 14 years of expertise in Operations, Maintenance, and QHSE in the field and
-          workshop, delivering innovation and sustainability of drilling and evaluation equipment. Always honor
-          result-orientation, discipline, living up to time-constraints, responsibilities, and work pressure, team
-          building, and leadership as main keys to sustainable outcomes.
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+        <div class="section-content about">
+          <p>
+            Accomplished professional with 14 years of expertise in Operations, Maintenance, and QHSE in the field and
+            workshop, delivering innovation and sustainability of drilling and evaluation equipment. Always honor
+            result-orientation, discipline, living up to time-constraints, responsibilities, and work pressure, team
+            building, and leadership as main keys to sustainable outcomes.
+          </p>
+          <p>
+            Privileged to deliver value, working for international Oil and Gas customers like Shell, ExxonMobil, ENI,
+            BP,
+            Aker BP, Apache, BG, Chevron, Lukoil, Oxy, Wintershall, and Total as well as national Oil and Gas customers,
+            like Saudi ARAMCO, Qatar Petroleum, Kuwait Oil Company, Iraq Oil Company, United Arab Emirates ADNOC, Oman
+            PDO, Egypt Khalda and Algeria Sonatrach.
+          </p>
+        </div>
       </section>
+      <!-- ABOUT SECTION END -->
+
+      <!-- OBJECTIVE SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
           <i class="fas fa-bullseye"></i> Objective</button>
-        <p>
+        <p class="section-content" id="objective">
           Seeking career in the Tech Industry as software Engineer leveraging my education
-          <a href="#" class="resume-sec-btn">See all</a>
+          and past work expertise bring fresh eyes and new perspective.
         </p>
       </section>
+      <!-- OBJECTIVE SECTION END -->
+
+      <!-- CORE COMPETENCIES SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
-          <i class="fas fa-globe"></i> Professional Experience
+          <i class="fas fa-toolbox"></i> Core Competencies</button>
+        <div class="section-content core-competencies">
+          <p>Throughout my professional career I have built strong foundations for:</p>
+          <ul>
+            <li>Management</li>
+            <li>Strategic Planning</li>
+            <li>Innovation Performance</li>
+            <li>People Management</li>
+            <li>Continuous Improvement</li>
+          </ul>
+        </div>
+      </section>
+      <!-- CORE COMPETENCIES SECTION END -->
+
+      <!-- EMPLOYMENT SECTION START -->
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-briefcase"></i> Employment
         </button>
-        <p>
+        <p class="section-content" id="employment">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
           nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
           fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
           <a href="#" class="resume-sec-btn">See all</a>
         </p>
       </section>
+      <!-- INTERNATIONAL EXPERIENCE SECTION END -->
 
+
+      <!-- EMPLOYMENT SECTION START -->
+      <section class="container">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-globe"></i> International Experience
+        </button>
+        <div class="section-content int-experience">
+          <img src="img/Map/international-experience-map.svg" alt="world map with drop pins">
+        </div>
+      </section>
+      <!-- INTERNATIONAL EXPERIENCE  SECTION END -->
+
+      <!-- EDUCATION SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
           <i class="fas fa-user-graduate"></i> Education
         </button>
-        <p>
-          Bachelor of Electronics and Telecommunications Engineering, Cairo University, Egypt, 2006
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+        <div class="section-content" id="education">
+          <div class="sub-container">
+            <img src="img/logos/cairo-university-logo.png" alt="cairo university logo" title="Cairo University">
+            <p>Bachelor of <span class="bold-text">Electronics and Telecommunications Engineering</span>, Cairo
+              University,Egypt, 2006
+            </p>
+          </div>
+          <div class="sub-container">
+            <img src="img/logos/wollongong-university.png" alt="wollongong university logo"
+              title="Wollongong University in Dubai">
+            <p>Certificate of Study,<span class="bold-text">Business Administration and Management, General</span>,
+              University of Wollongong-university, 2014
+            </p>
+          </div>
+        </div>
       </section>
+      <!-- EDUCATION SECTION END -->
 
+      <!-- CERTIFICATION SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
-          <i class="fas fa-certificate"></i></i> Licenses and Certifications
+          <i class="fas fa-certificate"></i></i> Certifications
         </button>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+        <div class="section-content" id="licenses-certifications">
+          <div class="sub-container">
+            <img src="img/logos/texas-am-school.png" alt="texas a and m business school logo"
+              title="Mays Business School">
+            <ul>
+              <li>Business Leadership Development II, 2019</li>
+              <li>Business Leadership Development I, 2016</li>
+              <li>Finance for None Financial Leaders, 2014</li>
+            </ul>
+          </div>
+          <div class="sub-container">
+            <img src="img/logos/bv-logo.png" alt="bureau veritas company logo" title="Bureu Veritas">
+            <ul>
+              <li>Internal Auditor, Quality Management System ISO 9001:2015, 2017</li>
+            </ul>
+          </div>
+          <div class="sub-container">
+            <img src="img/logos/halliburton.png" alt="halliburton company logo" title="Halliburton">
+            <ul>
+              <li>Business Development, Advanced, 2019</li>
+              <li>Lean, Six Sigma, 2016</li>
+              <li>Performance Management, 2015</li>
+            </ul>
+          </div>
+        </div>
       </section>
+      <!-- CERTIFICATION SECTION END -->
+
+      <!-- VOLUNTEERING SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
           <i class="fas fa-hands-helping"></i> Volunteering</button>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+        <div class="section-content" id="volunteering">
+          <div class="sub-container">
+            <img src="img/logos/resala-logo.png" alt="resala charity organization logo"
+              title="Resala Charity Organization">
+            <p>Volunteer, Social Association in different social and charity activities from 2003 to 2006</p>
+          </div>
+          <div class="sub-container">
+            <img src="img/logos/cairo-university-logo.png" alt="cairo university logo">
+            <p>Volunteer, Telecom Club for Engineers (TECE), programming project co-leader
+              2004</p>
+          </div>
+        </div>
       </section>
+      <!-- VOLUNTEERING SECTION END -->
+
+      <!-- TECHNICAL SKILLS SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
-          <i class="fas fa-industry"></i> Technical Skills</button>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+          <i class="fas fa-toolbox"></i> Technical Skills</button>
+        <div class="section-content">
+          <!-- PROGRAMMING SUBSECTION START-->
+          <div class="sub-container grey-bk">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-c++-100.png" alt="c plus plus logo" title="Microsoft C++">
+              <img src="img/technical-skills-logos/icons8-c-sharp-logo-100.png" alt="c sharp logo" title="Microsoft C#">
+              <img src="img/technical-skills-logos/icons8-matlab-100.png" alt="matlab logo" title="Matlab">
+              <img src="img/technical-skills-logos/oop.png" alt="object oriented programming logo"
+                title="Object Oriented Programming">
+            </div>
+            <div class="skill-level-container">
+              <p>Programming</p>
+              <div class="skills-bar">
+                <div class="skills intermediate-level">Intermediate</div>
+              </div>
+            </div>
+          </div>
+          <!-- PROGRAMMING SUBSECTION END-->
+          <!-- WEB DEVELOPMENT SUBSECTION START-->
+          <div class="sub-container">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-css3-100.png" alt="css logo" title="CSS3">
+              <img src="img/technical-skills-logos/icons8-html-5-100.png" alt="html logo" title="HTML">
+              <img src="img/technical-skills-logos/icons8-javascript-100.png" alt="javascript logo" title="JavaScript">
+              <img src="img/technical-skills-logos/icons8-php-logo-100-2.png" alt="php logo" title="php">
+            </div>
+            <div class="skill-level-container">
+              <p>Full Stack Web Development</p>
+              <div class="skills-bar">
+                <div class="skills beginner-level">Beginner</div>
+              </div>
+            </div>
+          </div>
+          <!-- WEB DEVELOPMENT SUBSECTION END-->
+          <!-- GRAPHICS DESIGN SUBSECTION START-->
+          <div class="sub-container grey-bk">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-adobe-photoshop-100.png" alt="adobe photoshop logo"
+                title="Photoshop">
+              <img src="img/technical-skills-logos/icons8-autodesk-autocad-100.png" alt="autocad logo" title="AutoCad">
+              <img src="img/technical-skills-logos/icons8-microsoft-visio-2019-100.png" alt="microsoft visio logo"
+                title="Microsoft Visio">
+              <img src="img/technical-skills-logos/igrafx.png" alt="igrafx logo" title="iGrafx">
+            </div>
+            <div class="skill-level-container">
+              <p>Graphics and CAD Design</p>
+              <div class="skills-bar">
+                <div class="skills beginner-level">Beginner</div>
+              </div>
+            </div>
+          </div>
+          <!-- GRAPHICS DESIGN SUBSECTION END-->
+          <!-- WORKPLACE ESSENTIALS SUBSECTION START-->
+          <div class="sub-container">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-apple-logo-100.png" alt="apple mac os logo" title="Mac OS">
+              <img src="img/technical-skills-logos/icons8-windows-10-100.png" alt="microsoft windows os logo"
+                title="Microsoft Windows">
+              <img src="img/technical-skills-logos/icons8-office-365-100.png" alt="microsoft office 365 logo"
+                title="Microsoft Office">
+              <img src="img/technical-skills-logos/adobe-writer.png" alt="adobe pdf writer logo"
+                title="Adobe PDF Writer">
+            </div>
+            <div class="skill-level-container">
+              <p>Workplace Essentials</p>
+              <div class="skills-bar">
+                <div class="skills advanced-level">Advanced</div>
+              </div>
+            </div>
+          </div>
+          <!-- WORKPLACE ESSENTIALS SUBSECTION END-->
+          <!-- ENTERPRISE COLLABORATION ESSENTIALS SUBSECTION START-->
+          <div class="sub-container grey-bk">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-microsoft-yammer-2019-100.png" alt="microsoft yammer logo"
+                title="Microsoft Yammer">
+              <img src="img/technical-skills-logos/icons8-microsoft-teams-2019-100.png" alt="microsoft teams logo"
+                title="Microsoft Teams">
+              <img src="img/technical-skills-logos/icons8-microsoft-sharepoint-100.png" alt="microsoft sharepoint logo"
+                title="Microsoft SharePoint">
+              <img src="img/technical-skills-logos/microsoft-power-apps.png" alt="microsoft power apps logo"
+                title="Microsoft PowerApps">
+            </div>
+            <div class="skill-level-container">
+              <p>Enterprise Collaboration Essentials</p>
+              <div class="skills-bar">
+                <div class="skills intermediate-level">Intermediate</div>
+              </div>
+            </div>
+          </div>
+          <!-- ENTERPRISE COLLABORATION ESSENTIALS SUBSECTION END-->
+          <!-- Enterprise Resources Planning SUBSECTION START-->
+          <div class="sub-container">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-sap-100.png" alt="SAP logo" title="SAP">
+              <img src="img/technical-skills-logos/icons8-microsoft-project-100.png" alt="microsoft project logo"
+                title="Microsoft Project">
+              <img src="img/technical-skills-logos/icons8-power-bi-100.png" alt="microsoft powerbi logo"
+                title="Microsoft PowerBI Report">
+              <img src="img/technical-skills-logos/qlikview.png" alt="qlikView logo" title="QlikView BI Reports">
+            </div>
+            <div class="skill-level-container">
+              <p>Enterprise Resources Planning</p>
+              <div class="skills-bar">
+                <div class="skills intermediate-level">Intermediate</div>
+              </div>
+            </div>
+          </div>
+          <!-- Enterprise Resources Planning SUBSECTION END-->
+          <!-- OIL AND GAS DRILLING SUBSECTION START-->
+          <div class="sub-container grey-bk">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/ex.png" alt="ex logo" title="Explosion Protection">
+              <img src="img/technical-skills-logos/offshore-rig-blue.png" alt="offshore rig logo"
+                title="Oil and Gas Drilling">
+              <img src="img/technical-skills-logos/icons8-control-panel-100.png" alt="control panel logo"
+                title="Industrial Control and PLC">
+            </div>
+            <div class="skill-level-container">
+              <p>Oil and Gas Drilling</p>
+              <div class="skills-bar">
+                <div class="skills advanced-level">Advanced</div>
+              </div>
+            </div>
+          </div>
+          <!-- OIL AND GAS DRILLING SUBSECTION END-->
+          <!-- PERSONAL COMPUTERS AND NETWORKS SUBSECTION START-->
+          <div class="sub-container">
+            <div class="skills-logos">
+              <img src="img/technical-skills-logos/icons8-computer-support-100.png" alt="personal computer logo"
+                title="Personal Computer">
+              <img src="img/technical-skills-logos/computer-networks.png" alt="computer network logo"
+                title="Computer Networks">
+            </div>
+            <div class="skill-level-container">
+              <p>Personal Computers and Networks</p>
+              <div class="skills-bar">
+                <div class="skills advanced-level">Advanced</div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- PERSONAL COMPUTERS AND NETWORKS SUBSECTION END-->
       </section>
+      <!-- TECHNICAL SKILLS SECTION END -->
+
+      <!-- TESTIMONIALS SECTION START -->
       <section class="container">
         <button type="button" class="accordion-btn">
           <i class="fas fa-thumbs-up"></i> Testimonials</button>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam corrupti
-          nulla quibusdam minus sequi error ratione. Id temporibus veniam illum
-          fugit nemo odio vero natus vel voluptatibus, debitis veritatis autem!
-          <a href="#" class="resume-sec-btn">See all</a>
-        </p>
+        <div class="section-content" id="testimonials">
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>James Tang</p>
+                </div>
+                <div class="attestant-title">
+                  <p>Director - Strategic Analysis at Halliburton</p>
+                  <p>May 14, 2020, Amr worked with James in the same group</p>
+                </div>
+              </div>
+              <p class="testimony">I worked closely with Amr on a team project as part of Halliburton’s Business
+                Leadership Development program, an education program administered by Texas A&M’s Mays School of
+                Business. The program is designed to identify and train future leaders of our company. During our 6-week
+                team project, Amr took a strong, vocal leadership role, managing relationships with our in-house
+                “client”, keeping us organized, accountable and progressing towards our final deliverable. He
+                demonstrated very strong teamwork and communication skills, as well as a strong technical background in
+                directional drilling which was critically important for the success of our project. Our final
+                presentation was very well received by our professors and executive panelists, and our recommendations
+                were impactful and accepted by our internal clients. We were recognized as the most outstanding
+                presentation of our class. I know Amr to be highly reliable, hard worker and a great team player who
+                would be an asset to any organization. I would happily and confidently support Amr as a positive
+                reference.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>Mahmoud ElKady</p>
+                </div>
+                <div class="attestant-title">
+                  <p>Former Executive/Vice President at Halliburton</p>
+                  <p>May 17, 2020, Mahmoud managed Amr directly</p>
+                </div>
+              </div>
+              <p class="testimony">Over the last 8 years, I have had the opportunity to work closely with Amr. Amr enjoy
+                a broad management experience in upstream oilfield including Repair and maintenance operations and QHSE
+                management. He has an excellent understanding of operations needs and how to manage a cost-effective
+                successful operation. With his talent and commitments, he was a key player in driving the business
+                growth in MENA Region and USA to unprecedented successes. Amr is a team player, very hard worker and
+                always demonstrated an excellent leadership and coaching to his teams while keeping an excellent
+                relationship with his peers and with the management. With Amr’s talents, commitment and experience, he
+                will add value to any organization. It has been always a great pleasure working with him.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>Darcy Criss</p>
+                </div>
+                <div class="attestant-title">
+                  <p>Global Technical Services at Halliburton</p>
+                  <p>August 10, 2015, Darcy worked with Amr in different groups</p>
+                </div>
+              </div>
+              <p class="testimony">Amr is an extraordinary experienced professional and manager who also serves as an
+                aspiring mentor. Amr
+                exhibits strong interpersonal skills and a unique capacity for compassion. These qualities most notably
+                translate into his ability to motivate his team to care about their safety and quality of work. Any
+                problems or challenges that arise are dealt with in a professional and speedy manner ensuring a team
+                oriented solution is found for the benefit of the business and his people.
+                Every conversation I held with Amr has given me the sense I was taking to a mentor, very supportive of
+                my ideas but also developing my skill sets in my current role as well preparing me for future. I have
+                always felt my opinion and ideas were heard and carried forward with absolute accreditation and support.
+                It is my pleasure to recommend Amr.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>Hany Mabrouk</p>
+                </div>
+                <div class="attestant-title">
+                  <p>Regional PDC - MENA/AP at Halliburton</p>
+                  <p>May 10, 2020, Many was senior to Amr but didn’t manage directly</p>
+                </div>
+              </div>
+              <p class="testimony">Worked closely with Amr for almost seven years.
+                Thanks only to his utmost devotion to his work, he found his way up the ladder to senior management. Amr
+                likes challenges, selectting the biggest obstacles that other choose to ignore, and tackles them hard
+                till clearing the path. Yet, he likes circumstantial vision, where all points around problem in hand
+                have to be addressed.
+                A team player, leads by nature, and sets example of own behavior, making it hard for subordinates not to
+                follow.
+                Amr finally has sophisticatedly organized multi layered character, that allows him to adapt swiftly even
+                in very difficult situations
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>Abdullah Ameen</p>
+                </div>
+                <div class="attestant-title">
+                  <p>Service Quality Manager at Halliburton | NEBOSH IGC, EC | ISO 9001, 45001, 14001</p>
+                  <p>May 14, 2020, Abdullah reported directly to Amr</p>
+                </div>
+              </div>
+              <p class="testimony">I had the chance to work with Amr Fouad reporting directly to him in two different
+                roles and later working with him in several projects. Amr’s name rings a bill of dedication, innovation,
+                problem solving, exceeding expectations of self, client, superiors. Amr is the type of manager who
+                supports his employees to develop their talents and skills to breakthrough. He created many managers
+                within the organization who are delivering outstanding performance across different regions. Knowing
+                that Amr is in any project is a pre-confirmation that the output of this project is successful. Amr is
+                great addition to any organization.
+              </p>
+            </div>
+            <div class="mySlides fade">
+              <div class="attestant">
+                <div class="avatar">
+                  <img src="img/avatar.png" alt="person photo">
+                  <p>Ahmed Sanad </p>
+                </div>
+                <div class="attestant-title">
+                  <p>Project Manager at Siemens Energy, PMP®,PMI-RMP®,IPMA®,MSc</p>
+                  <p>May 29, 2020, Amr was senior to Ahmed Sanad but didn’t manage directly</p>
+                </div>
+              </div>
+              <p class="testimony">Amr is a great role model and motivational leader to work with. He has exceptional
+                expertise in leadership, coaching and motivation. He consistently demonstrated solid work ethics,
+                dedication and sense of a team building skills instead of working for himself.
+                Amr has great knowledge in his field, and is able to keep widening his knowledge and expertise
+                exponentially!
+                I was impressed by Amr"s ability to deal with even the toughest situations and with difficult personnel
+                whether from the team or the customer side. That skill often takes years to develop among consulting
+                professionals, but it seemed to come perfectly naturally to him.
+                Any employee would be lucky to have Amr as a manager, Amr would be an asset to any company!
+              </p>
+            </div>
+            <!-- TESTIMONIAL SECTION END -->
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </div>
       </section>
+      <!-- TESTIMONIALS SECTION END -->
 
-      <!-- CONTACT FORM SECTION -->
+      <!-- CONTACT FORM START -->
       <section class="formcontainer">
+
         <form action="#" id="contact-form">
           <h2>Get in Touch</h2>
           <label for="name " class="screen-reader-text">Name</label>
           <input type="text" id="name" name="name" placeholder="Name" />
-          <p class='form-error' id='nameerror'>Name is required.</p>
+          <p class="form-error" id="nameerror">Name is required.</p>
           <label for="emailid" class="screen-reader-text">Email</label>
           <input type="text" id="emailid" name="emailid" placeholder="Email" />
-          <p class='form-error' id='emailerror'>Email is required.</p>
-          <p class='form-error' id='emailformaterror'>Enter valid Email ID.</p>
+          <p class="form-error" id="emailerror">Email is required.</p>
+          <p class="form-error" id="emailformaterror">Enter valid Email ID.</p>
           <label for="subject" class="screen-reader-text">Subject</label>
           <input type="text" id="subject" name="subject" placeholder="Subjet" />
-          <p class='form-error' id='subjecterror'>Subject is required</p>
+          <p class="form-error" id="subjecterror">Subject is required</p>
           <label for="message" class="screen-reader-text">Message</label>
           <textarea id="message" name="message" placeholder="Message"></textarea>
-          <p class='form-error' id='messageerror'>Message is required</p>
-          <p class='form-error' id='swearworderror'>Inappropriate words won't be tolerated</p>
+          <p class="form-error" id="messageerror">Message is required</p>
+          <p class="form-error" id="swearworderror">Inappropriate words won"t be tolerated</p>
           <input type="submit" value="Send Message" />
         </form>
-        <div class='contact'>
-          <div class='contact-info'>
+        <!-- CONTACT FORM END -->
+
+        <!-- CONTACT DETAILS START -->
+        <div class="contact">
+          <div class="contact-info">
             <h2>Contact Info</h2>
             <p><i class="fas fa-phone"></i> 780-123-4567</p>
             <a href="info@noemail.com"><i class="fa fa-envelope"></i> info@noemail.com</a>
             <p><i class="fab fa fa-map-marker"></i> 01 02ST SW,Edmonton,AB A1B2C3,CA</p>
           </div>
-          <div class='socialmedia'>
+          <div class="socialmedia">
             <h2>Follow & Connect On</h2>
             <a href="https://ca.linkedin.com/"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
             <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://stackoverflow.com/"><i class="fab fa-stack-overflow"></i></a>
             <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram-square"></i></a>
           </div>
         </div>
+        <!-- CONTACT DETAILS END -->
+
       </section>
     </section>
-    <!--     <aside class='side-bar'>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-      </nav>
-    </aside> -->
+
   </main>
+
   <footer>
     <p>&copy; Copyright Amr Fouad 2020</p>
+    <div class="icons-credit">Icons Credit goes to: <a href="https://www.flaticon.com/authors/freepik"
+        title="Freepik">Freepik</a>
+      and <a target="_blank" href="https://icons8.com">Icons8</a></div>
   </footer>
 </body>
 

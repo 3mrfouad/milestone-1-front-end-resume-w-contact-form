@@ -34,9 +34,9 @@ Date of last edit: september xx, 2020 xx:xx am */
 =============================================*/
 
 * {
-  outline: 1px solid #ff0000;
+  /* outline: 1px solid #ff0000; */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #92bace;
+  color: #333333;
 }
 /* h1 {
   outline: 1px solid #d0ff00;
@@ -73,19 +73,24 @@ main {
 .main-wrapper {
   outline: 1px solid #54a8c2;
 }
-div {
-  outline: 1px solid #00ff62;
-}
 form {
   outline: 1px solid #0004ff;
 } */
-
+/* div {
+  outline: 1px solid #00ff62;
+}
+P {
+  outline: 1px solid #0000ff;
+}
+img {
+  outline: 1px solid #ffbb00;
+} */
 /*=============================================
 =           HEADER SECTIONS                   =
 =============================================*/
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,15 +103,15 @@ h1 {
   max-width: 565px;
   width: 100%;
   text-align: center;
-  color: #f1f1f1;
+  color: #333333;
 }
 header {
-  background-color: #0073b1;
+  background-color: #ffe04f;
   max-width: 565px;
   width: 100%;
-  position: -webkit-sticky; /*! Use of "Position" permitted per assignment guidelines in nav  */
-  position: sticky; /*! Use of "Position" permitted per assignment guidelines in nav  */
-  top: 0px;
+  /* position: -webkit-sticky; */ /*! Use of "Position" permitted per assignment guidelines in nav  */
+  /* position: sticky; */ /*! Use of "Position" permitted per assignment guidelines in nav  */
+  /* top: 0px; */
 }
 main {
   max-width: 565px;
@@ -124,7 +129,29 @@ section {
   margin: 2%;
 }
 section button i {
-  color: #f1f1f1;
+  color: #333333;
+}
+.bold-text {
+  font-weight: 650;
+  color: #a06d00;
+}
+
+/*=============================================
+=           ABOUT SECTIONS                   =
+=============================================*/
+.about{
+  padding:2.5%;
+  text-align: justify;
+  text-justify: distribute;
+}
+
+/*=============================================
+=     INTERNATIONAL EXPERIENCE SECTIONS       =
+=============================================*/
+.int-experience img{
+  width: 100%;
+  height:auto;
+  max-width: 565px;
 }
 
 /*=============================================
@@ -133,20 +160,20 @@ section button i {
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 100%;
 }
 .accordion-btn {
   max-width: 565px;
-  width: 100%;
   text-align: left;
   margin: 0.25em 0.25em 0 0.25em;
   padding: 2%;
   text-transform: uppercase;
   letter-spacing: -0.025em;
   /* accordion */
-  background-color: #0073b1;
-  font-weight: 700;
-  color: #f1f1f1;
+  background-color: #ffe04f;
+  font-weight: 900;
+  color: #333333;
   cursor: pointer;
   transition: background 650ms;
 }
@@ -158,25 +185,26 @@ section button i {
 }
 /* accordion */
 .accordion-btn-active {
-  background: #92bace;
+  background: #bcce92;
 }
 /* accordion */
 .accordion-btn-active::after {
   content: "\25be";
 }
-.container p {
+.container .section-content {
   max-width: 565px;
   margin: 0 0.25em 0.25em 0.25em;
-  padding-left: 0.25em;
-  line-height: 1.5em;
-  /* accordion */
-  display: block;
+  /* padding-left: 0.25em; need for Ps not divs*/
+  /*   line-height: 1.5em;
+ */ /* accordion */
+  display: flex;
+  flex-direction: column;
   max-height: auto;
-  background-color: #eeeeee;
-  color: #000000;
+  background-color: #f0edde;
+  color: #333333;
 }
 /* accordion */
-.accordion-btn-active + p {
+.accordion-btn-active + .section-content {
   display: none;
 }
 .resume-sec-btn {
@@ -191,11 +219,99 @@ section button i {
   text-decoration: none;
   cursor: pointer;
   background-color: #a0a0a0;
-  color: #000000;
+  color: #333333;
 }
-.container p a:hover {
-  background-color: #000000;
-  color: #f1f1f1;
+.container .section-content a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+/*=============================================
+=            SUBCONTAINER STYLING             =
+=============================================*/
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5% 0 2.5% 2.5%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sub-container p {
+  margin: 0 1% 0 2.5%;
+  font-size: 12px;
+  width: 100%;
+  line-height: 1.5em;
+}
+.sub-container ul {
+  margin: 0 1% 0 2%;
+  font-size: 12px;
+  width: 100%;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+.sub-container img {
+  width: 50px;
+  height: 50px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+/*=============================================
+=            TECHNICAL SKILLS SECTION         =
+=============================================*/
+/* 
+.skills {
+  text-align: left;
+  font-size:12px;
+  font-weight: 700;
+  padding: 0 0 0 2.5% ;
+  line-height: 15px;
+  color: #eef5ec; 
+} */
+.beginner-level {
+  width: calc(100% / 2.5);
+  background-color: #ff5959;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.intermediate-level {
+  width: calc(200% / 3);
+  background-color: #ffa500;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.advanced-level {
+  width: 90%;
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.skill-level-container {
+  margin: 0 0 0 2.5%;
+  width: 50%;
+}
+.skills-bar {
+  background-color: rgb(255, 255, 182);
+}
+.skill-level-container p {
+  padding: 0 0 2.5% 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.skills-logos {
+  width: 45%;
+}
+
+.section-content .grey-bk {
+  background-color: #eee5b6;
 }
 
 /*=============================================
@@ -208,7 +324,7 @@ section button i {
 }
 .formcontainer h2 {
   width: 100%;
-  color: #f1f1f1;
+  color: #333333;
   text-align: left;
   margin: 5% 0 5% 2%;
 }
@@ -227,20 +343,28 @@ section button i {
   outline-color: transparent;
   cursor: pointer;
   background: #a0a0a0;
-  color: #201f1f;
+  color: #fff;
   border-radius: 10px 0 10px 0;
 }
 .formcontainer form input[type="submit"]:hover {
-  background: #3086cc;
-  color: #f1f1f1;
+  background: #ffe04f;
+  color: #333333;
+  border-radius: 0 10px 0 10px;
+  transition: all 0.3s;
 }
 .formcontainer form input {
   margin: 5% 5% 0 2%;
   height: 50px;
   border-radius: 10px 0 10px 0;
   padding: 1em;
-  color: #000000;
+  color: #333333;
   font-weight: 500;
+}
+.formcontainer form input[type="text"]:focus,
+.formcontainer form textarea:focus {
+  border-radius: 0 10px 0 10px;
+  transition: all 0.3s;
+  background-color: #ffffb6;
 }
 .formcontainer form input::placeholder {
   color: #808080;
@@ -251,7 +375,7 @@ textarea {
   padding: 1em;
   height: 10em;
   border-radius: 10px 0 10px 0;
-  color: #000000;
+  color: #333333;
   font-weight: 500;
   resize: vertical;
 }
@@ -278,12 +402,19 @@ textarea {
 }
 .contact-info p,
 .contact-info a {
-  margin: 0 0 2.5% 0;
+  margin: 0 0 2.5% 5%;
 }
 .socialmedia i {
   font-size: 1.5em;
-  letter-spacing: 1em;
   justify-self: flex-end;
+}
+.socialmedia i:first-child {
+  font-size: 1.5em;
+  justify-self: flex-end;
+  margin: 0 0 0 2.5%;
+}
+.socialmedia a {
+  margin: 0 0 0 2.5%;
 }
 
 /*=============================================
@@ -297,7 +428,7 @@ textarea {
   text-align: left;
   background-color: #ff0000;
   font-style: italic;
-  color: #f1f1f1;
+  color: #ffffff;
   font-size: 0.75em;
   box-shadow: 1px 1px 1px #aaaaaa;
   position: relative; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
@@ -331,11 +462,17 @@ footer {
   margin: 0 0 5% 0;
 }
 
+.icons-credit {
+  margin: 2.5% 0 0 0;
+  font-size: 75%;
+  color: #808080;
+}
+
 /*=============================================
 =            MEDIA QUERIES                =
 =============================================*/
-
-/* @media only screen and (min-width: 600px) {
+/* 
+@media only screen and (min-width: 600px) {
   html {
     display: flex;
     align-content: center;
@@ -356,6 +493,7 @@ footer {
   }
   .accordion-btn {
     max-width: 650px;
+    width:100%;
   }
   .formcontainer {
   display: flex;
@@ -376,8 +514,8 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000000;
-  background-color: #000000e6;
+  background-color: #333333;
+  background-color: #333333e6;
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -406,7 +544,7 @@ footer {
 }
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
+  color: #ffffff;
 }
 .overlay #closebtn {
   position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
@@ -415,7 +553,7 @@ footer {
   font-size: 60px;
 }
 #openbtn {
-  color: #f1f1f1;
+  color: #333333;
 }
 #header-nav {
   width: 100%;
@@ -427,4 +565,165 @@ h1 + p {
   font-size: 30px;
   cursor: pointer;
   height: max-content;
+}
+
+/*=============================================
+=           TESTMONIAL SECTION STYLING        =
+=============================================*/
+
+/* #testimonials img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+} */
+.section-content {
+  width: fit-content;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
+  height: 350px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px;
+  color: #00000038;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #000000cc;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.attestant {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  /*   align-items: center;
+  justify-content: center; */
+  width: 40%;
+  padding: 2.5% 0 0 2.5%;
+}
+.avatar img {
+  width: 50px;
+  height: 50px;
+}
+.avatar p {
+  font-weight: 700;
+  font-size: 10px;
+  padding: 5% 0 0 0;
+}
+.attestant-title {
+  width: 100%;
+  padding: 5% 0.5% 0 0;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+.attestant-title p:first-child {
+  font-weight: 700;
+  font-size: 10px;
+}
+.attestant-title p:last-child {
+  font-size: 8px;
+  font-style: italic;
+  color: #757575;
+}
+.testimony {
+  padding: 2.5%;
+  font-size: 10px;
+  text-align: justify;
+  text-justify: distribute;
+  line-height: 150%;
+  overflow: auto;
 }
