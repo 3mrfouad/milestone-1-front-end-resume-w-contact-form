@@ -34,9 +34,10 @@ Date of last edit: september xx, 2020 xx:xx am */
 =============================================*/
 
 * {
-  /* outline: 1px solid #ff0000; */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
+/*   outline: 1px solid #ff0000;
+ */  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*   color: #333333;
+ */
 }
 /* h1 {
   outline: 1px solid #d0ff00;
@@ -52,10 +53,6 @@ nav {
 }
 a {
   outline: 1px solid #d5e21d;
-}
-
-body {
-  outline: 1px solid #a5c977;
 }
 header {
   outline: 1px solid #00ffff;
@@ -73,9 +70,7 @@ main {
 .main-wrapper {
   outline: 1px solid #54a8c2;
 }
-form {
-  outline: 1px solid #0004ff;
-} */
+ */
 /* div {
   outline: 1px solid #00ff62;
 }
@@ -84,29 +79,64 @@ P {
 }
 img {
   outline: 1px solid #ffbb00;
-} */
+} 
+form {
+  outline: 1px solid #0004ff;
+}*/
+body {
+  outline: 1px solid #7786c9;
+}
 /*=============================================
 =           HEADER SECTIONS                   =
 =============================================*/
-
 body {
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  background-image: url("../img/page-background.jpg");
+  background-repeat: repeat;
+  position: relative;
 }
 i {
   font-size: inherit;
 }
-h1 {
+.floating-hello {
+  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
+  position: fixed; /*! Use of "Position" permitted per assignment guidelines in nav  */
+  top: 100px;
+  left: 10px;
+  opacity: 0.8;
+  width:auto;
+  max-width: 300px;
+  height: auto;
+}
+/* h1 {
+  
   max-width: 565px;
   width: 100%;
   text-align: center;
-  color: #333333;
+   color: #333333; 
+color: #ffffff;
+
+} */
+
+h1 {
+  opacity: 1;
+  max-width: 565px;
+  width: 100%;
+  padding: 2.5%;
+  background-color: #adadad;
+  color: #000000;
+  font-weight: bold;
+  text-align: center;
+  mix-blend-mode: screen;
 }
 header {
-  background-color: #ffe04f;
+  /*   background-color: #ffe04f;
+ */
+  background: #ffffff8c;
+  background-image: url("../img/header-background.png");
   max-width: 565px;
   width: 100%;
   /* position: -webkit-sticky; */ /*! Use of "Position" permitted per assignment guidelines in nav  */
@@ -128,383 +158,26 @@ section {
   max-width: 565px;
   margin: 2%;
 }
-section button i {
+/* section button i {
   color: #333333;
+} */
+.bold-text-emphasis {
+  font-weight: 700;
+  color: #22120d !important;
+  font-size: 1.25em;
+  opacity: .79;
 }
 .bold-text {
-  font-weight: 650;
-  color: #a06d00;
-}
-
-/*=============================================
-=           ABOUT SECTIONS                   =
-=============================================*/
-.about{
-  padding:2.5%;
-  text-align: justify;
-  text-justify: distribute;
-}
-
-/*=============================================
-=     INTERNATIONAL EXPERIENCE SECTIONS       =
-=============================================*/
-.int-experience img{
-  width: 100%;
-  height:auto;
-  max-width: 565px;
-}
-
-/*=============================================
-=           RESUME SECTIONS                   =
-=============================================*/
-
-.container {
-  display: flex;
-  flex-direction: column;
-  max-height: 100%;
-}
-.accordion-btn {
-  max-width: 565px;
-  text-align: left;
-  margin: 0.25em 0.25em 0 0.25em;
-  padding: 2%;
-  text-transform: uppercase;
-  letter-spacing: -0.025em;
-  /* accordion */
-  background-color: #ffe04f;
-  font-weight: 900;
-  color: #333333;
-  cursor: pointer;
-  transition: background 650ms;
-}
-/* accordion */
-.accordion-btn::after {
-  content: "\25b4";
-  float: right;
-  transform: scale(1.5);
-}
-/* accordion */
-.accordion-btn-active {
-  background: #bcce92;
-}
-/* accordion */
-.accordion-btn-active::after {
-  content: "\25be";
-}
-.container .section-content {
-  max-width: 565px;
-  margin: 0 0.25em 0.25em 0.25em;
-  /* padding-left: 0.25em; need for Ps not divs*/
-  /*   line-height: 1.5em;
- */ /* accordion */
-  display: flex;
-  flex-direction: column;
-  max-height: auto;
-  background-color: #f0edde;
-  color: #333333;
-}
-/* accordion */
-.accordion-btn-active + .section-content {
-  display: none;
-}
-.resume-sec-btn {
-  width: 20%;
-  height: auto;
-  text-align: center;
-  margin: 0.5em;
-  padding: 0 0.5em 0 0.5em;
-  border-radius: 0.25em;
-  outline-color: transparent;
-  float: right;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #a0a0a0;
-  color: #333333;
-}
-.container .section-content a:hover {
-  background-color: #333333;
-  color: #ffffff;
-}
-
-/*=============================================
-=            SUBCONTAINER STYLING             =
-=============================================*/
-.sub-container {
-  display: flex;
-  flex-direction: row;
-  padding: 2.5% 0 2.5% 2.5%;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.sub-container p {
-  margin: 0 1% 0 2.5%;
-  font-size: 12px;
-  width: 100%;
-  line-height: 1.5em;
-}
-.sub-container ul {
-  margin: 0 1% 0 2%;
-  font-size: 12px;
-  width: 100%;
-  list-style-type: square;
-  list-style-position: inside;
-  line-height: 1.5em;
-}
-.sub-container img {
-  width: 50px;
-  height: 50px;
-  max-height: 200px;
-  max-width: 200px;
-}
-
-/*=============================================
-=            TECHNICAL SKILLS SECTION         =
-=============================================*/
-/* 
-.skills {
-  text-align: left;
-  font-size:12px;
-  font-weight: 700;
-  padding: 0 0 0 2.5% ;
-  line-height: 15px;
-  color: #eef5ec; 
-} */
-.beginner-level {
-  width: calc(100% / 2.5);
-  background-color: #ff5959;
-  color: #ffffff;
-  padding: 2.5%;
-  font-size: 12px;
   font-weight: 700;
 }
-.intermediate-level {
-  width: calc(200% / 3);
-  background-color: #ffa500;
-  color: #ffffff;
-  padding: 2.5%;
-  font-size: 12px;
-  font-weight: 700;
-}
-.advanced-level {
-  width: 90%;
-  background-color: #4caf50;
-  color: #ffffff;
-  padding: 2.5%;
-  font-size: 12px;
-  font-weight: 700;
-}
-.skill-level-container {
-  margin: 0 0 0 2.5%;
-  width: 50%;
-}
-.skills-bar {
-  background-color: rgb(255, 255, 182);
-}
-.skill-level-container p {
-  padding: 0 0 2.5% 0;
-  font-size: 14px;
-  font-weight: 700;
-}
-.skills-logos {
-  width: 45%;
-}
-
-.section-content .grey-bk {
-  background-color: #eee5b6;
-}
-
-/*=============================================
-=            CONTACT FORM CSS                 =
-=============================================*/
-
-.formcontainer {
-  display: flex;
-  flex-direction: column;
-}
-.formcontainer h2 {
-  width: 100%;
-  color: #333333;
-  text-align: left;
-  margin: 5% 0 5% 2%;
-}
-.formcontainer form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  order: 1;
-}
-.formcontainer form input[type="submit"] {
-  border: none;
-  height: 50px;
-  text-align: center;
-  font-weight: 700;
-  border-radius: 0.25em;
-  outline-color: transparent;
-  cursor: pointer;
-  background: #a0a0a0;
-  color: #fff;
-  border-radius: 10px 0 10px 0;
-}
-.formcontainer form input[type="submit"]:hover {
-  background: #ffe04f;
-  color: #333333;
-  border-radius: 0 10px 0 10px;
-  transition: all 0.3s;
-}
-.formcontainer form input {
-  margin: 5% 5% 0 2%;
-  height: 50px;
-  border-radius: 10px 0 10px 0;
-  padding: 1em;
-  color: #333333;
-  font-weight: 500;
-}
-.formcontainer form input[type="text"]:focus,
-.formcontainer form textarea:focus {
-  border-radius: 0 10px 0 10px;
-  transition: all 0.3s;
-  background-color: #ffffb6;
-}
-.formcontainer form input::placeholder {
-  color: #808080;
-  font-weight: 700;
-}
-textarea {
-  margin: 5% 5% 0 2%;
-  padding: 1em;
-  height: 10em;
-  border-radius: 10px 0 10px 0;
-  color: #333333;
-  font-weight: 500;
-  resize: vertical;
-}
-.formcontainer form textarea::placeholder {
-  color: #808080;
-  font-weight: 700;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin: 5% 5% 0 0;
-  justify-content: space-between;
-  order: 2;
-}
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 2.5% 5%;
-}
-.socialmedia {
-  display: inline-block;
-  order: 1;
-  padding: 0 0 25% 5%;
-}
-.contact-info p,
-.contact-info a {
-  margin: 0 0 2.5% 5%;
-}
-.socialmedia i {
-  font-size: 1.5em;
-  justify-self: flex-end;
-}
-.socialmedia i:first-child {
-  font-size: 1.5em;
-  justify-self: flex-end;
-  margin: 0 0 0 2.5%;
-}
-.socialmedia a {
-  margin: 0 0 0 2.5%;
-}
-
-/*=============================================
-=            FORM ERROR MESSAGES              =
-=============================================*/
-
-.form-error {
-  margin: 5% 0 0 0;
-  padding: 1.5%;
-  width: max-content;
-  text-align: left;
-  background-color: #ff0000;
+.italic-text {
   font-style: italic;
-  color: #ffffff;
-  font-size: 0.75em;
-  box-shadow: 1px 1px 1px #aaaaaa;
-  position: relative; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
-  display: none;
-}
-.form-error::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid #ff0000;
-  position: absolute; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
-  top: -10px;
-}
-.empty-field-error {
-  background-color: #ffdddd;
-  border-style: dotted;
-  border-color: #ff0000;
-  border-width: 2px;
-  border-radius: 10px 0 10px 0;
+  font-size: 0.9em;
+  font-weight: 600;
 }
 /*=============================================
-=                 FOOTER                      =
+=            OVERLAY NAV MENU                 =
 =============================================*/
-
-footer {
-  max-width: 565px;
-  width: 100%;
-  text-align: center;
-  margin: 0 0 5% 0;
-}
-
-.icons-credit {
-  margin: 2.5% 0 0 0;
-  font-size: 75%;
-  color: #808080;
-}
-
-/*=============================================
-=            MEDIA QUERIES                =
-=============================================*/
-/* 
-@media only screen and (min-width: 600px) {
-  html {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  }
-  header,
-  section,
-  ul {
-    max-width: 850px;
-    align-content: center;
-    justify-content: center;
-  }
-  header {
-    max-height: 100px;
-  }
-  .container p {
-    max-width: 650px;
-  }
-  .accordion-btn {
-    max-width: 650px;
-    width:100%;
-  }
-  .formcontainer {
-  display: flex;
-  flex-direction: row;
-}
-.formcontainer form {
-  width: 50%;}
-
-} */
-
-/* OVERLAY NAV MENU CSS */
 .overlay {
   display: flex;
   justify-content: center;
@@ -566,23 +239,245 @@ h1 + p {
   cursor: pointer;
   height: max-content;
 }
+/*=============================================
+=           RESUME SECTIONS COMMON            =
+=============================================*/
+.container {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+.accordion-btn {
+  max-width: 565px;
+  text-align: left;
+  margin: 0.25em 0.25em 0 0.25em;
+  padding: 2%;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  /* accordion */
+  /* background-color: #ffe04f; */
+  /* background-color: #1c110b; */
+  background: #ffffff7e;
+  color: #3d2112;
+  
+  /*  background: #ffffff8c; */
+  font-weight: 900;
+  /*  color: #333333; */
+  /* color:#472f23; */
+  cursor: pointer;
+  transition: background 650ms;
+}
+/* accordion */
+.accordion-btn::after {
+  content: "\25b4";
+  float: right;
+  transform: scale(1.5);
+}
+/* accordion */
+.accordion-btn-active {
+  /* background: #bcce92; */
+  background: #ffffff8c;
+}
+/* accordion */
+.accordion-btn-active::after {
+  content: "\25be";
+}
+.container .section-content {
+  max-width: 565px;
+  margin: 0 0.25em 0.25em 0.25em;
+  /* padding-left: 0.25em; need for Ps not divs*/
+  /*   line-height: 1.5em;
+ */ /* accordion */
+  display: flex;
+  flex-direction: column;
+/*   max-height: auto;
+ */  background-color: #faebbbde;
+  color: #333333;
+}
+/* accordion */
+.accordion-btn-active + .section-content {
+  display: none;
+}
+.resume-sec-btn {
+  width: 20%;
+  height: auto;
+  text-align: center;
+  margin: 0.5em;
+  padding: 0 0.5em 0 0.5em;
+  border-radius: 0.25em;
+  outline-color: transparent;
+  float: right;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #a0a0a0;
+  color: #333333;
+}
+.container .section-content a:hover {
+  background-color: #333333 !important;
+  color: #ffffff;
+}
+/*=============================================
+=            SUBCONTAINER STYLING             =
+=============================================*/
+.sub-container {
+  display: flex;
+  flex-direction: row;
+  padding: 2.5% 0 2.5% 2.5%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sub-container p {
+  margin: 0 1% 0 2.5%;
+  font-size: 12px;
+  width: 100%;
+  line-height: 1.5em;
+}
+.sub-container ul {
+  margin: 0 1% 0 2%;
+  font-size: 12px;
+  width: 100%;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+.sub-container img {
+  width: 50px;
+  height: 50px;
+  max-height: 200px;
+  max-width: 200px;
+}
+/*=============================================
+=           ABOUT SECTIONS                   =
+=============================================*/
+.about,
+.objective,
+.core-competencies {
+  padding: 2.5%;
+}
+.about p,
+.objective p {
+  padding: 0 0 2.5% 0;
+  line-height: 1.3em;
+  text-align: justify;
+  text-justify: distribute; /* !ERROR */
 
+}
+/*=============================================
+=           OBJECTIVE SECTION                 =
+=============================================*/
+
+/*=============================================
+=         CORE COMPETENCIES SECTION           =
+=============================================*/
+.core-competencies p {
+  padding: 0 0 2.5% 0;
+}
+.core-competencies ul{
+  padding: 0 1% 0 2%;
+  font-size: 16px;
+  width: 100%;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.75em;
+}
+/*=============================================
+=         EMPLOYMENT SECTION                  =
+=============================================*/
+.employment-duties ul {
+  padding: 0 1% 0 2%;
+  font-size: 12px;
+  width: 100%;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+/*=============================================
+=     INTERNATIONAL EXPERIENCE SECTION        =
+=============================================*/
+.int-experience img {
+  width: 100%;
+  height: auto;
+  max-width: 565px;
+}
+
+/*=============================================
+=            EDUCATION SECTION                =
+=============================================*/
+
+/*=============================================
+=            CERTIFICATIONS SECTION           =
+=============================================*/
+
+/*=============================================
+=            VOLUNTEERING SECTION             =
+=============================================*/
+/* 
+
+/*=============================================
+=            TECHNICAL SKILLS SECTION         =
+=============================================*/
+/* 
+.skills {
+  text-align: left;
+  font-size:12px;
+  font-weight: 700;
+  padding: 0 0 0 2.5% ;
+  line-height: 15px;
+  color: #eef5ec; 
+} */
+.beginner-level {
+  width: calc(100% / 2.5);
+  background-color: #ff5959;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.intermediate-level {
+  width: calc(200% / 3);
+  background-color: #ffa500;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.advanced-level {
+  width: 90%;
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 2.5%;
+  font-size: 12px;
+  font-weight: 700;
+}
+.skill-level-container {
+  margin: 0 0 0 2.5%;
+  width: 50%;
+}
+.skills-bar {
+  background-color: rgb(255, 255, 182);
+}
+.skill-level-container p {
+  padding: 0 0 2.5% 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.skills-logos {
+  width: 45%;
+}
+
+.section-content .grey-bk {
+  background-color: #eee5b6;
+}
 /*=============================================
 =           TESTMONIAL SECTION STYLING        =
 =============================================*/
-
-/* #testimonials img {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-} */
 .section-content {
   width: fit-content;
   display: flex;
   align-content: center;
   justify-content: center;
 }
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -590,15 +485,13 @@ h1 + p {
   margin: auto;
   width: 100%;
 }
-
 /* Hide the images by default */
 .mySlides {
   display: flex;
   flex-direction: column;
   padding: 2.5%;
-  height: 350px;
+  height: 450px;
 }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -615,19 +508,16 @@ h1 + p {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: #000000cc;
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -638,7 +528,6 @@ h1 + p {
   width: 100%;
   text-align: center;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -646,16 +535,16 @@ h1 + p {
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
+  background: #ffffff7e;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
-  background-color: #717171;
+  /*background-color: #717171;*/
+  background: #ffffff;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -672,7 +561,6 @@ h1 + p {
     opacity: 1;
   }
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -681,13 +569,11 @@ h1 + p {
     opacity: 1;
   }
 }
-
-.attestant {
+.attestant, .employment-history{
   display: flex;
   flex-direction: row;
-  align-items: left;
 }
-.avatar {
+.avatar, .employer-logo {
   display: flex;
   flex-direction: column;
   /*   align-items: center;
@@ -695,35 +581,258 @@ h1 + p {
   width: 40%;
   padding: 2.5% 0 0 2.5%;
 }
-.avatar img {
+.avatar img , .employer-logo img{
   width: 50px;
   height: 50px;
 }
-.avatar p {
+.avatar p, .employer-logo p {
   font-weight: 700;
-  font-size: 10px;
+  font-size: 12px;
   padding: 5% 0 0 0;
 }
-.attestant-title {
+.attestant-title, .employment-title {
   width: 100%;
   padding: 5% 0.5% 0 0;
   font-size: 12px;
   line-height: 1.2em;
 }
-.attestant-title p:first-child {
+.attestant-title p:first-child, .employment-title p:first-child{
   font-weight: 700;
-  font-size: 10px;
+  font-size: 14px;
 }
-.attestant-title p:last-child {
-  font-size: 8px;
+.attestant-title p:last-child, .employment-title p:last-child{
+  padding: 2.5% 0 0 0;
+  font-size: 12px;
   font-style: italic;
   color: #757575;
 }
-.testimony {
+.testimony, .employment-duties {
   padding: 2.5%;
-  font-size: 10px;
+  font-size: 14px;
   text-align: justify;
-  text-justify: distribute;
-  line-height: 150%;
+  text-justify: distribute; 
+  line-height: 1.5em;
   overflow: auto;
+}
+/*=============================================
+=    CONTACT FORM AND CONTACE SECTIONS CSS    =
+=============================================*/
+.pen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 5%;
+}
+.pen img {
+  width: 100px;
+  height: auto;
+  order: 1;
+  padding: 0 0 0 2.5%;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5% 2.5% 0 2.5%;
+}
+.formcontainer h2,
+.formcontainer h3 {
+  color: #ffffff;
+  text-align: left;
+  padding: 2.5% 0 0 0;
+  font-size: 1.5em;
+}
+.formcontainer h3 {
+  padding: 2.5% 0 5% 0;
+}
+.formcontainer h2 {
+  order: 2;
+  font-size: 2.5em;
+}
+.formcontainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  padding: 3% 0 0 0;
+}
+.formcontainer form input[type="submit"] {
+  border: none;
+  height: 50px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0;
+  font-weight: 700;
+  border-radius: 0.25em;
+  outline-color: transparent;
+  cursor: pointer;
+  background: #ffffff7e;
+  color: #3d2112;
+  border-radius: 10px 0 10px 0;
+}
+.formcontainer form input[type="submit"]:hover {
+  background: #ffe04f;
+  color: #3d2112;
+  border-radius: 0 10px 0 10px;
+  transition: all 0.3s;
+}
+.formcontainer form input {
+  margin: 5% 5% 0 2%;
+  height: 50px;
+  border-radius: 10px 0 10px 0;
+  padding: 1em;
+  color: #333333;
+  font-weight: 500;
+}
+.formcontainer form input[type="text"]:focus,
+.formcontainer form input[type="text"]:hover,
+.formcontainer form textarea:focus,
+.formcontainer form textarea:hover {
+  border-radius: 0 10px 0 10px;
+  transition: all 0.3s;
+  background-color: #3d271a7e;
+  color: #ffffff;
+}
+.formcontainer form input::placeholder {
+  color: #808080;
+  font-weight: 700;
+}
+textarea {
+  margin: 5% 5% 0 2%;
+  padding: 1em;
+  height: 10em;
+  border-radius: 10px 0 10px 0;
+  color: #333333;
+  font-weight: 500;
+  resize: vertical;
+}
+.formcontainer form textarea::placeholder {
+  color: #808080;
+  font-weight: 700;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0 0 0;
+}
+.socialmedia {
+  display: inline-block;
+  order: 1;
+  padding: 5% 0 15% 0;
+}
+.contact-info p,
+.contact-info a {
+  margin: 0 0 2.5% 5%;
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.socialmedia i {
+  justify-self: flex-end;
+  color: #ffffff;
+}
+.socialmedia i:first-child {
+  font-size: 3em;
+  justify-self: flex-end;
+}
+.socialmedia a {
+  padding: 0 0 0 5%;
+}
+/*=============================================
+=            FORM ERROR MESSAGES              =
+=============================================*/
+.form-error {
+  margin: 5% 0 0 0;
+  padding: 1.5%;
+  width: max-content;
+  text-align: left;
+  background-color: #ff0000;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 0.75em;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  position: relative; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
+  display: none;
+}
+.form-error::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #ff0000;
+  position: absolute; /*! Approved by Warren __ Use of "Position" to visual aid the error message with little arrow  */
+  top: -10px;
+}
+.empty-field-error {
+  background-color: #ffdddd;
+  border-style: dotted;
+  border-color: #ff0000;
+  border-width: 2px;
+  border-radius: 10px 0 10px 0;
+}
+/*=============================================
+=                 FOOTER                      =
+=============================================*/
+footer {
+  max-width: 565px;
+  width: 100%;
+  text-align: center;
+  padding: 2.5% 2.5% 0 2.5%;
+  margin: 0 2.5% 2.5% 2.5%;
+  color: #ffffff;
+  font-weight: 700;
+}
+.icons-credit p {
+  margin: 2.5% 0 0 0;
+  font-size: 75%;
+  color: #ffffff;
+}
+.icons-credit a {
+  text-decoration-color: #f6fa03;
+  color: #ffffff;
+}
+/*=============================================
+=            MEDIA QUERIES                =
+=============================================*/
+/* 
+@media only screen and (min-width: 600px) {
+  html {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  header,
+  section,
+  ul {
+    max-width: 850px;
+    align-content: center;
+    justify-content: center;
+  }
+  header {
+    max-height: 100px;
+  }
+  .container p {
+    max-width: 650px;
+  }
+  .accordion-btn {
+    max-width: 650px;
+    width:100%;
+  }
+  .formcontainer {
+  display: flex;
+  flex-direction: row;
+}
+.formcontainer form {
+  width: 50%;}
+} */
+
+@media only screen and (max-width: 600px) {
+.floating-hello{
+  display: none;
+}
 }

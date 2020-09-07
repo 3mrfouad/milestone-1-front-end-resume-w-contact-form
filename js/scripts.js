@@ -217,11 +217,11 @@ function openNav() {
 }
 /*
 *==================================================
-            SLIDE SHOW LOGIC
+           TESTIMONIALS SLIDE SHOW LOGIC
 *==================================================
 */
 
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -235,9 +235,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -250,7 +250,12 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display =
-    "flex"; /* changed from block to flex to test actual text not img */
+  slides[slideIndex - 1].style.display = "flex"; /* changed from block to flex to test actual text not img */
   dots[slideIndex - 1].className += " active";
 }
+
+/*
+*==================================================
+            EMPLOYMENT SLIDE SHOW LOGIC
+*==================================================
+*/
