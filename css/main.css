@@ -338,6 +338,7 @@ header {
 }
 .skills-logos {
   width: 45%;
+  margin:0;
 }
 .section-content .grey-bk {
   background: #eee5b6;
@@ -521,7 +522,7 @@ header {
   padding: 2.5%;
 }
 .mySlides-portfolio {
-  height: 350px;
+  height: 400px;
 }
 
 /*=============================================
@@ -656,6 +657,7 @@ textarea {
 }
 .socialmedia a {
   padding: 0 0 0 5%;
+  font-size: 24px;
 }
 
 /*=============================================
@@ -903,6 +905,9 @@ footer > p {
   }
   .formcontainer form input[type="submit"] {
     font-size: 30px;
+  }
+  .skill-level-container {
+    padding-left:5%;
   }
 }
 /*=============================================
