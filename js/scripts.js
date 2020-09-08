@@ -1,4 +1,3 @@
-/* cSpell:disable */
 /*
 ----------------------------
 Front-End Project DOCSTRING
@@ -6,14 +5,14 @@ Front-End Project DOCSTRING
 Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september xx, 2020 xx:xx am
+Date of last edit: september 08, 2020 12:00 am
 */
+
 /*
 *==================================================
             GLOBAL VARIABLES DEFINITION
 *==================================================
 */
-
 /* DOM ELEMENTS DEFINITION */
 const getInTouchForm = document.getElementById("contact-form");
 const name = document.getElementById("name");
@@ -32,7 +31,6 @@ const emailFormatErrorMsg = document.getElementById("emailformaterror");
             ON LOAD INITIALIZATION LOGIC
 *==================================================
 */
-
 document.body.onload = InitializePage();
 
 /*
@@ -40,7 +38,6 @@ document.body.onload = InitializePage();
                 CARDS ACCORDION LOGIC
 *==================================================
 */
-
 /* EVENT LISTENER */
 document.querySelectorAll(".accordion-btn").forEach((button) => {
   button.addEventListener("click", () => {
@@ -53,7 +50,6 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
             MAILTO VIA CONTACT FORM LOGIC
 *==================================================
 */
-
 /* EVENT LISTENER */
 getInTouchForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -62,8 +58,8 @@ getInTouchForm.addEventListener("submit", (event) => {
     const emailMessageMod = encodeURIComponent(
       `From: ${name.value}` +
         "\13" +
-        `Email: ${subject.value}` +
-        "\13Message:\13" +
+        `Email: ${emailID.value}` +
+        "\13\13Message:\13" +
         `${message.value}`
     );
     const myEmail = "info@noemail.com";
@@ -76,7 +72,6 @@ getInTouchForm.addEventListener("submit", (event) => {
             ON LOAD INITIALIZATION FUNCTION
 *==================================================
 */
-
 function InitializePage() {
   name.value = "";
   emailID.value = "";
@@ -89,7 +84,6 @@ function InitializePage() {
             FORM VALIDATION FUNCTION
 *==================================================
 */
-
 function GetInTouchFormValidation() {
   const swearWords = ["feldercarb", "frack", "skinjob", "vulgacarb"];
   let errorsCntr = 0;
@@ -166,7 +160,6 @@ function GetInTouchFormValidation() {
           EMAIL FORMAT VALIDATION FUNCTION
 *==================================================
 */
-
 function ValidateEmail() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailID.value)) {
     return true;
@@ -199,27 +192,30 @@ function ValidateEmail() {
 
 /*
 *==================================================
-            OVERLAY NAV MENU LOGIC
+            POP UP NAV MENU LOGIC
 *==================================================
 */
+/**
+ * Citation: Got inspired by W3Schools menu tutorials. I didn't copy specific code as is, however I got inspired by the logic of different
+ * options, the main one that was my starting point is below:
+ * Source: https://www.w3schools.com/howto/howto_css_dropdown.asp
+ * Reason: Being new to HTML/CSS/JS looking for tutorials and ideas online is normal practice.
+ * How it works? the logic is straight forward, toggling the display on a button using CSS button attributes when idle and when user hover
+ * by the mouse.
+ */
 
-const closeBtn = document.getElementById("closebtn");
-const openBtn = document.getElementById("openbtn");
-
-closeBtn.addEventListener("click", closeNav);
-openBtn.addEventListener("click", openNav);
-
-function closeNav() {
-  document.getElementById("overlay-nav").style.height = "0%";
-}
-function openNav() {
-  document.getElementById("overlay-nav").style.height = "100%";
-}
 /*
 *==================================================
            TESTIMONIALS SLIDE SHOW LOGIC
 *==================================================
 */
+/**
+ * Citation: Got inspired by W3Schools slideshow  tutorials. I did copy part of the code as is,however I modified it to suit my application.
+ * Source: https://www.w3schools.com/howto/howto_js_slideshow.asp
+ * Reason: Being new to HTML/CSS/JS looking for tutorials and ideas online is normal practice.
+ * How it works? the logic is straight forward, toggling the display and/or height when the nex/prev buttons are clicked (also the bottom circles)
+ * the toggling is done using JS, while the fade effect was done by CSS frame and opacity attributes.
+ */
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -228,12 +224,10 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
-
 // Thumbnail image controls
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -250,12 +244,162 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex - 1].style.display = "flex"; /* changed from block to flex to test actual text not img */
+  slides[slideIndex - 1].style.display =
+    "flex"; /* changed from block to flex to test actual text not img */
   dots[slideIndex - 1].className += " active";
 }
+document.getElementById("prev").addEventListener("click", () => {
+  plusSlides(-1);
+});
+document.getElementById("next").addEventListener("click", () => {
+  plusSlides(1);
+});
+document.getElementById("dot-1").addEventListener("click", () => {
+  currentSlide(1);
+});
+document.getElementById("dot-2").addEventListener("click", () => {
+  currentSlide(2);
+});
+document.getElementById("dot-3").addEventListener("click", () => {
+  currentSlide(3);
+});
+document.getElementById("dot-4").addEventListener("click", () => {
+  currentSlide(4);
+});
+document.getElementById("dot-5").addEventListener("click", () => {
+  currentSlide(5);
+});
+document.getElementById("dot-6").addEventListener("click", () => {
+  currentSlide(6);
+});
 
 /*
 *==================================================
             EMPLOYMENT SLIDE SHOW LOGIC
 *==================================================
 */
+let slideIndexEmp = 1;
+showSlidesEmp(slideIndexEmp);
+// Next/previous controls
+function plusSlidesEmp(n) {
+  showSlidesEmp((slideIndexEmp += n));
+}
+// Thumbnail image controls
+function currentSlideEmp(n) {
+  showSlidesEmp((slideIndexEmp = n));
+}
+function showSlidesEmp(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-emp");
+  let dots = document.getElementsByClassName("dot-emp");
+  if (n > slides.length) {
+    slideIndexEmp = 1;
+  }
+  if (n < 1) {
+    slideIndexEmp = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexEmp - 1].style.display =
+    "flex"; /* changed from block to flex to test actual text not img */
+  dots[slideIndexEmp - 1].className += " active";
+}
+
+document.getElementById("prev-emp").addEventListener("click", () => {
+  plusSlidesEmp(-1);
+});
+document.getElementById("next-emp").addEventListener("click", () => {
+  plusSlidesEmp(1);
+});
+
+document.getElementById("dot-emp-1").addEventListener("click", () => {
+  currentSlideEmp(1);
+});
+document.getElementById("dot-emp-2").addEventListener("click", () => {
+  currentSlideEmp(2);
+});
+document.getElementById("dot-emp-3").addEventListener("click", () => {
+  currentSlideEmp(3);
+});
+document.getElementById("dot-emp-4").addEventListener("click", () => {
+  currentSlideEmp(4);
+});
+document.getElementById("dot-emp-5").addEventListener("click", () => {
+  currentSlideEmp(5);
+});
+document.getElementById("dot-emp-6").addEventListener("click", () => {
+  currentSlideEmp(6);
+});
+document.getElementById("dot-emp-7").addEventListener("click", () => {
+  currentSlideEmp(7);
+});
+document.getElementById("dot-emp-8").addEventListener("click", () => {
+  currentSlideEmp(8);
+});
+
+/*
+*==================================================
+            PORTFOLIO SLIDE SHOW LOGIC
+*==================================================
+*/
+let slideIndexPortfolio = 1;
+showSlidesPortfolio(slideIndexPortfolio);
+// Next/previous controls
+function plusSlidesPortfolio(n) {
+  showSlidesPortfolio((slideIndexPortfolio += n));
+}
+// Thumbnail image controls
+function currentSlidePortfolio(n) {
+  showSlidesPortfolio((slideIndexPortfolio = n));
+}
+function showSlidesPortfolio(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides-portfolio");
+  let dots = document.getElementsByClassName("dot-portfolio");
+  if (n > slides.length) {
+    slideIndexPortfolio = 1;
+  }
+  if (n < 1) {
+    slideIndexPortfolio = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndexPortfolio - 1].style.display =
+    "flex"; /* changed from block to flex to test actual text not img */
+  dots[slideIndexPortfolio - 1].className += " active";
+}
+
+document.getElementById("prev-portfolio").addEventListener("click", () => {
+  plusSlidesPortfolio(-1);
+});
+document.getElementById("next-portfolio").addEventListener("click", () => {
+  plusSlidesPortfolio(1);
+});
+
+document.getElementById("dot-portfolio-1").addEventListener("click", () => {
+  currentSlidePortfolio(1);
+});
+document.getElementById("dot-portfolio-2").addEventListener("click", () => {
+  currentSlidePortfolio(2);
+});
+document.getElementById("dot-portfolio-3").addEventListener("click", () => {
+  currentSlidePortfolio(3);
+});
+document.getElementById("dot-portfolio-4").addEventListener("click", () => {
+  currentSlidePortfolio(4);
+});
+document.getElementById("dot-portfolio-5").addEventListener("click", () => {
+  currentSlidePortfolio(5);
+});
+document.getElementById("dot-portfolio-6").addEventListener("click", () => {
+  currentSlidePortfolio(6);
+});
+

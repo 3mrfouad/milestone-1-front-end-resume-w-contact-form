@@ -5,7 +5,7 @@ Front-End Project DOCSTRING
 Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september xx, 2020 xx:xx am
+Date of last edit: september 08, 2020 12:00 am
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -14,60 +14,67 @@ Date of last edit: september xx, 2020 xx:xx am
 
 <head>
   <meta charset="UTF-8" />
+
   <!-- HTML META DATA -->
   <meta name="description" content="Amr Fouad Resume" />
-  <meta name="keywords" content="HTML,CSS,JavaScript" />
+  <meta name="keywords"
+    content="Oil and Gas, TECHCareers, ManPower, HTML,CSS,JavaScript, Web Development, Software Development" />
   <meta name="author" content="Amr Fouad" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amr Fouad Resume</title>
+  <title>Amr Fouad Resume 2020</title>
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="css/main.css" />
+
+  <!-- SCRIPTS -->
   <script src="js/scripts.js" defer></script>
 </head>
 
 <!-- BODY -->
 
 <body>
-  <img class="floating-hello" src="img/hello.png" alt="hello image">
 
   <!-- HEADER -->
   <header>
-
-    <!-- Overlay Nav Menu Start-->
-    <nav id="overlay-nav" class="overlay">
-      <a href="#" id="closebtn">&times;</a>
-      <div class="overlay-nav-content">
-        <a href="#"><i class="fas fa-home"></i> Home</a>
-        <a href="#"><i class="fas fa-user-circle"></i> About</a>
-        <a href="#"><i class="fas fa-bullseye"></i> Objective</a>
-        <a href="#"><i class="fas fa-toolbox"></i> Core Competencies</a>
-        <a href="#"><i class="fas fa-briefcase"></i> Employment</a>
-        <a href="#"><i class="fas fa-globe"></i> International Experience</a>
-        <a href="#"><i class="fas fa-user-graduate"></i> Education</a>
-        <a href="#"><i class="fas fa-certificate"></i> Certifications</a>
-        <a href="#"><i class="fas fa-hands-helping"></i> Volunteering</a>
-        <a href="#"> <i class="fas fa-toolbox"></i> Technical Skills</a>
-        <a href="#"><i class="fas fa-thumbs-up"></i> Testimonials</a>
-        <a href="#"><i class="fas fa-briefcase"></i> Portfolio</a>
-        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
-      </div>
-    </nav>
-    <div id="header-nav">
-      <h1>Amr Fouad</h1>
-      <p id="openbtn">&#9776;</p>
-    </div>
-    <!-- Overlay Nav Menu End-->
-
+    <h1>Amr Fouad</h1>
   </header>
+
+  <!-- ASIDE NAV -->
+  <aside>
+    <!-- POP-UP Nav Menu Start-->
+
+    <nav class="popup">
+      <button class="popupbtn">&#9776;</button>
+      <section class="popup-content">
+        <a href="#" id="home"><i class="fas fa-home"></i> Home</a>
+        <a href="#about"><i class="fas fa-user-circle"></i> About</a>
+        <a href="#objective"><i class="fas fa-bullseye"></i> Objective</a>
+        <a href="#core-competencies"><i class="fas fa-toolbox"></i> Core Competencies</a>
+        <a href="#employment"><i class="fas fa-briefcase"></i> Employment</a>
+        <a href="#int-experience"><i class="fas fa-globe"></i> International Experience</a>
+        <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
+        <a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a>
+        <a href="#volunteering"><i class="fas fa-hands-helping"></i> Volunteering</a>
+        <a href="#technical-skills"> <i class="fas fa-toolbox"></i> Technical Skills</a>
+        <a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a>
+        <a href="#testimonials"><i class="fas fa-thumbs-up"></i> Testimonials</a>
+        <a href="#contact-form"><i class="fas fa-envelope"></i> Contact</a>
+      </section>
+    </nav>
+
+    <!-- POP-UP Nav Menu End-->
+  </aside>
 
   <!-- MAIN -->
   <main>
     <section class="main-wrapper">
 
       <!-- ABOUT SECTION START -->
-      <section class="container">
-        <button type="button" class="accordion-btn">
+      <section class="container" id="about">
+        <!--         <img class="floating-hello" src="img/hello.png" alt="hello image">
+ --> <button type="button" class="accordion-btn">
           <i class="fas fa-address-card"></i> About</button>
-        <div class="section-content about">
+        <section class="section-content about">
           <p>
             Accomplished professional with 14 years of expertise in Operations, Maintenance, and QHSE in the field and
             workshop, delivering innovation and sustainability of drilling and evaluation equipment.
@@ -106,125 +113,367 @@ Date of last edit: september xx, 2020 xx:xx am
             <span class="italic-text"> Khalda </span>and Algeria
             <span class="italic-text"> Sonatrach</span>.
           </p>
-        </div>
+        </section>
       </section>
       <!-- ABOUT SECTION END -->
 
       <!-- OBJECTIVE SECTION START -->
-      <section class="container">
+      <section class="container" id="objective">
         <button type="button" class="accordion-btn">
           <i class="fas fa-bullseye"></i> Objective</button>
-        <div class="section-content objective">
+        <section class="section-content objective">
           <p>
             Seeking <span class="bold-text-emphasis">Software Engineering Manager
             </span> career in the Tech Industry where I can leverage my education
             and past work expertise bringing fresh eyes and new perspective to ever growing industry.
           </p>
-        </div>
+        </section>
       </section>
       <!-- OBJECTIVE SECTION END -->
 
       <!-- CORE COMPETENCIES SECTION START -->
-      <section class="container">
+      <section class="container" id="core-competencies">
         <button type="button" class="accordion-btn">
           <i class="fas fa-toolbox"></i> Core Competencies</button>
-        <div class="section-content core-competencies">
+        <section class="section-content core-competencies">
           <p>Throughout my professional career I have built strong foundations for:</p>
-          <ul class='bold-text'>
+          <ul class="bold-text">
             <li>Management</li>
             <li>Strategic Planning</li>
             <li>Innovation Performance</li>
             <li>People Management</li>
             <li>Continuous Improvement</li>
           </ul>
-        </div>
+        </section>
       </section>
       <!-- CORE COMPETENCIES SECTION END -->
 
       <!-- EMPLOYMENT SECTION START -->
-      <section class="container">
+      <section class="container" id="employment">
         <button type="button" class="accordion-btn">
           <i class="fas fa-briefcase"></i> Employment
         </button>
-        <div class="section-content employment">
-          <div class="myEmpSlides fade">
-            <div class="employment-history">
-              <div class="employer-logo">
-                <img src="img/logos/halliburton.png" alt="company logo">
-                <p>HALLIBURTON </p>
-              </div>
-              <div class="employment-title">
-                <p>Global Health, Safety and Environment Senior Manager</p>
-                <p>2019 - 2020</p>
-              </div>
-            </div>
-            <div class="employment-duties">
-              <ul>
-                <li>Managed global HSE program, ensuring alignment with company HSE objectives and deliverables.</li>
-                <li>Confirmed Drilling department compliance to HSE expectations and key performance indicators.</li>
-                <li>Oversaw global HSE incidents, certifying proper incident investigation, driving process improvements
-                  through lessons learnt, and making sure corrective actions were implemented across the organization.
-                </li>
-                <li>Led global Radioactive Materials Program and licensing, warranting safe, proper and secure
-                  procurement, storage, transportation, field utilization and end of life disposal, and managed
-                  qualification, training, and performance of Radiation Safety Officers worldwide.</li>
-                <li>Directed global Lithium Batteries Program, delivering safe, proper and secure procurement, storage,
-                  transportation, field utilization and end of life disposal.</li>
-                <li>Headed global chemicals compliance program in accordance to USA and international regulations.</li>
-                <li>Spearheaded global Pressure Facilities Program, ensuring safe operations across 55 facilities.</li>
-                <li>Succeeded COVID-19 Emergency Response, Case Tracking, and Workplaces Modifications in accordance
-                  with CDC recommendations.</li>
-                <li>Performed as Organization Culture Change Champion, utilizing Bradley, Oz, and other known
-                  methodologies.</li>
-                <li>Served as QHSE Internal System (Enablon Based) Produce Service Line expert.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <section class="section-content employment">
+          <section class="slideshow-container">
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Global Health, Safety and Environment Senior Manager</p>
+                  <p>Canada, 2019 - 2020</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Managed global HSE program, ensuring alignment with company HSE objectives and deliverables.</li>
+                  <li>Confirmed Drilling department compliance to HSE expectations and key performance indicators.</li>
+                  <li>Oversaw global HSE incidents, certifying proper incident investigation, driving process
+                    improvements
+                    through lessons learnt, and making sure corrective actions were implemented across the organization.
+                  </li>
+                  <li>Led global Radioactive Materials Program and licensing, warranting safe, proper and secure
+                    procurement, storage, transportation, field utilization and end of life disposal, and managed
+                    qualification, training, and performance of Radiation Safety Officers worldwide.</li>
+                  <li>Directed global Lithium Batteries Program, delivering safe, proper and secure procurement,
+                    storage,
+                    transportation, field utilization and end of life disposal.</li>
+                  <li>Headed global chemicals compliance program in accordance to USA and international regulations.
+                  </li>
+                  <li>Spearheaded global Pressure Facilities Program, ensuring safe operations across 55 facilities.
+                  </li>
+                  <li>Succeeded COVID-19 Emergency Response, Case Tracking, and Workplaces Modifications in accordance
+                    with CDC recommendations.</li>
+                  <li>Performed as Organization Culture Change Champion, utilizing Bradley, Oz, and other known
+                    methodologies.</li>
+                  <li>Served as QHSE Internal System (Enablon Based) Produce Service Line expert.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Global Quality Senior Manager, Repair and Maintenance</p>
+                  <p>USA, 2018 - 2019</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Managed global Repair and Maintenance (R&M) Quality, Safety, Training, and Competency programs,
+                    aligning with company SQ and HSE objectives and deliverables.</li>
+                  <li>Maximized R&M department resources utilization by process improvement and team skills
+                    development, leveraging all the best practices implemented in MENA/AP region.</li>
+                  <li>Audited global locations, validating compliance to internal QHSE management system (based on
+                    ISO9001/ISO14001/AP-Q2).</li>
+                  <li>Handled Equipment Failure Investigations process, ensuring proper incident investigation, driving
+                    process improvements through lessons learnt, and making sure corrective actions were implemented
+                    across the organization.</li>
+                  <li>Derived and coordinated several mechanical and electrical technological changes in collaboration
+                    with technology department leads, playing project manager role within the team.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Regional Repair and Maintenance Manager</p>
+                  <p>Dubai, UAE 2015 - 2018</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Developed and implemented programs, ensuring equipment reliability and personnel safety. </li>
+                  <li>Handled equipment and departmental budgets while working closely with operations, developing
+                    equipment strategies in order to meet company's goals. Ensured duties of R&M department were
+                    performed in safe, efficient, and effective manner.</li>
+                  <li>Built and implemented financial forecast tool for 1-3 months and proactive cost forecast that
+                    predicts potential cost accruals in 3-9 months.</li>
+                  <li>Developed and implemented inventory management based on Plan-for-Every-Part methodology, resulting
+                    in significant inventory metrics improvement.</li>
+                  <li>Coordinated with the Supply Chain team, improving procurement, logistics, and materials processes,
+                    warranting on-time delivery with optimal cost.</li>
+                  <li>Started up new Operations in Northern Iraq and Qatar. Scaled up operations in Egypt, Southern
+                    Iraq, Saudi and Kuwait. Downsized operations in Libya, Australia, and shut down Brunei.</li>
+                  <li>Achieved USD $3.2M in savings during 2016 downturn through operational cost optimization, third
+                    party contracts negotiations, and leveraging local content.</li>
+                  <li>Attended Halliburton academy - prestigious invitation to top 1000 performing employees of 50K
+                    worldwide.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Repair and Maintenance Manager</p>
+                  <p>Dubai, UAE 2013 - 2015</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Maximized department resources utilization by process improvement, proper organization structure
+                    and team skills development and performance alignment.</li>
+                  <li>Implemented the Shop Management System (SMS) based on Lean and Six Sigma principles.</li>
+                  <li>Built from scratch workshop planning and scheduling system, doubling department productivity with
+                    improved equipment reliability.</li>
+                  <li>Developed and managed department budgets, including managing performance and salaries of staff,
+                    coaching, and mentoring for career and skills development, and arranging for required trainings.
+                  </li>
+                  <li>Managed department inventory, achieving unprecedented high inventory turn rates, low slow move,
+                    and ZERO excess and obsolete.</li>
+                  <li>Implemented drilling equipment reliability screening, resulting in lower defect rate by over 70%.
+                  </li>
+                  <li>Attained 100% DCWF (Documented Competency Work Force) through systematic personnel development and
+                    training.</li>
+                  <li>Managed third party contractors and suppliers performance on regular basis, conducted quarterly
+                    and yearly performance and expenditure reviews.</li>
+                  <li>Promoted workplace safety and positive HSE engagement resulting in 0 Lost Time Injury (LTI) for
+                    4.5 years.</li>
+                  <li>Optimized the tubulars Non-Distributing-Testing NDT Contractor performance through collaborative
+                    process improvements and regular audits resulting in ZERO missed defects during inspection, and
+                    solid inspection documentation tracking.</li>
+                  <li>Received Halliburton QHSE Vice President MVP award for plant exemplary QHSE performance.</li>
+                  <li>Earned Sperry Drilling Strategic Business Manager MVP award for fostering technology and
+                    innovation.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Regional Repair and Maintenance Supervisor</p>
+                  <p>Dubai, UAE 2012 - 2013</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Developed standardized processes, work methods, checklists, bill of materials that helped in
+                    manufacturing and repair processes standardization while incorporating project management techniques
+                    in all job processes, leading to increased productivity by 80%+.</li>
+                  <li>Deployed Lean and Six Sigma practices, streamlining workshop value steam. </li>
+                  <li>Built and deployed documents management system for the first time. </li>
+                  <li>Designed and deployed training program that consisted of 39 chapters, delivering standardized new
+                    hires training for the first time. </li>
+                  <li>Created and deployed department new-hire onboarding package to guarantee smooth onboarding process
+                    that helped in faster employee engagement and earlier productivity realization. </li>
+                  <li>Incorporated Quality Control System in all processes and ensured products’ quality and reliability
+                    and on-time deliverables to customer. </li>
+                  <li>Enhanced products based on end user feedback. </li>
+                  <li>Expanded department technical scope to include more products, leveraging engineering and technical
+                    expertise, while reducing vendor expenditure. </li>
+                  <li>Expanded department geographical outreach to include Asia Pacific region. </li>
+                  <li>Fostered technology innovation, resulting in products continuous evolvement and introducing more
+                    than 10 new products to the department portfolio all of which addressed customer needs and provided
+                    technological edge. </li>
+                  <li>Started up in limited time Surface Data Logging Operations with Shell in Qatar, ensuring gap free
+                    QHSE performance with great attention to details. </li>
+                  <li>Supported tendering process by introducing comprehensive 135 pages technical portfolio document
+                    that contains all technical and engineering details. </li>
+                  <li>Developed 360o panoramic interactive cabinet model where client could virtually walk through
+                    Surface Data Logging (SDL) cabinet and get the feel and look of it. </li>
+                  <li>Received Sperry Drilling Vice President MVP award for focusing on department strategy. </li>
+
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Regional Surface Drilling Equipment Engineer</p>
+                  <p>Dubai, UAE 2008 - 2011</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Provided technical support for SDL Operations and field engineers in United Arab Emirates where
+                    SDL had units or standalone jobs. </li>
+                  <li>Maintained SDL offshore cabinets, logging software, gas analysis, geological analysis and data
+                    acquisition equipment. </li>
+                  <li>Completed offshore and onshore installations, commissioning and upgrades of SDL operations in
+                    compliance with international and local QHSE standards. </li>
+                  <li>Contributed in designing, prototype testing, field commissioning of in-house gas analysis
+                    equipment, improving reliability and reducing cost by 40%+.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="employment-title">
+                  <p>Surface Equipment Service Engineer</p>
+                  <p>Oman 2006 - 2008</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Provided technical support for SDL Operations and field engineers in Oman area where SDL had units
+                    or standalone jobs. </li>
+                  <li>Developed engineered innovative solutions to reduce computer and gas analysis equipment
+                    commissioning time, increasing 800% productivity. </li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-emp fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/ahd-perfumes-logo.png" alt="company logo">
+                  <p>AHD Perfumes</p>
+                </section>
+                <section class="employment-title">
+                  <p>Sales Representative</p>
+                  <p>Egypt 2000 - 2005</p>
+                </section>
+              </section>
+              <section class="employment-duties">
+                <ul>
+                  <li>Sales associate.</li>
+                  <li>Achieved top sales numerous times.</li>
+                  <li>Led sales associates team, managed sales outlet activities focusing on customer service and
+                    satisfaction.</li>
+                </ul>
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- FORWARD / BACKWARD ARROWS -->
+            <a class="prev" id="prev-emp">&#10094;</a>
+            <a class="next" id="next-emp">&#10095;</a>
+          </section>
+          <br>
+          <!-- DOT CIRCLES -->
+          <section class="dots">
+            <span class="dot-emp" id="dot-emp-1"></span>
+            <span class="dot-emp" id="dot-emp-2"></span>
+            <span class="dot-emp" id="dot-emp-3"></span>
+            <span class="dot-emp" id="dot-emp-4"></span>
+            <span class="dot-emp" id="dot-emp-5"></span>
+            <span class="dot-emp" id="dot-emp-6"></span>
+            <span class="dot-emp" id="dot-emp-7"></span>
+            <span class="dot-emp" id="dot-emp-8"></span>
+          </section>
+        </section>
       </section>
       <!-- EMPLOYMENT SECTION END -->
 
       <!-- INTERNATIONAL EXPERIENCE START -->
-      <section class="container">
+      <section class="container" id="int-experience">
         <button type="button" class="accordion-btn">
           <i class="fas fa-globe"></i> International Experience
         </button>
-        <div class="section-content int-experience">
+        <section class="section-content int-experience">
           <img src="img/Map/international-experience-map.svg" alt="world map with drop pins">
-        </div>
+        </section>
       </section>
       <!-- INTERNATIONAL EXPERIENCE SECTION END -->
 
       <!-- EDUCATION SECTION START -->
-      <section class="container">
+      <section class="container" id="education">
         <button type="button" class="accordion-btn">
           <i class="fas fa-user-graduate"></i> Education
         </button>
-        <div class="section-content" id="education">
-          <div class="sub-container">
+        <section class="section-content education">
+          <section class="sub-container">
             <img src="img/logos/cairo-university-logo.png" alt="cairo university logo" title="Cairo University">
             <p>Bachelor of <span class="bold-text">Electronics and Telecommunications Engineering</span>, Cairo
               University,Egypt, 2006
             </p>
-          </div>
-          <div class="sub-container">
+          </section>
+          <section class="sub-container">
             <img src="img/logos/wollongong-university.png" alt="wollongong university logo"
               title="Wollongong University in Dubai">
             <p>Certificate of Study, <span class="bold-text">Business Administration and Management, General</span>,
               University of Wollongong-university, 2014
             </p>
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <!-- EDUCATION SECTION END -->
 
       <!-- CERTIFICATION SECTION START -->
-      <section class="container">
+      <section class="container" id="certifications">
         <button type="button" class="accordion-btn">
           <i class="fas fa-certificate"></i> Certifications
         </button>
-        <div class="section-content" id="licenses-certifications">
-          <div class="sub-container">
+        <section class="section-content certifications">
+          <section class="sub-container">
             <img src="img/logos/texas-am-school.png" alt="texas a and m business school logo"
               title="Mays Business School">
             <ul>
@@ -232,106 +481,103 @@ Date of last edit: september xx, 2020 xx:xx am
               <li>Business Leadership Development I, 2016</li>
               <li>Finance for None Financial Leaders, 2014</li>
             </ul>
-          </div>
-          <div class="sub-container">
+          </section>
+          <section class="sub-container">
             <img src="img/logos/bv-logo.png" alt="bureau veritas company logo" title="Bureu Veritas">
             <ul>
               <li>Internal Auditor, Quality Management System ISO 9001:2015, 2017</li>
             </ul>
-          </div>
-          <div class="sub-container">
+          </section>
+          <section class="sub-container">
             <img src="img/logos/halliburton.png" alt="halliburton company logo" title="Halliburton">
             <ul>
               <li>Business Development, Advanced, 2019</li>
               <li>Lean, Six Sigma, 2016</li>
               <li>Performance Management, 2015</li>
             </ul>
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <!-- CERTIFICATION SECTION END -->
 
       <!-- VOLUNTEERING SECTION START -->
-      <section class="container">
+      <section class="container" id="volunteering">
         <button type="button" class="accordion-btn">
           <i class="fas fa-hands-helping"></i> Volunteering</button>
-        <div class="section-content" id="volunteering">
-          <div class="sub-container">
+        <section class="section-content volunteering">
+          <section class="sub-container">
             <img src="img/logos/resala-logo.png" alt="resala charity organization logo"
               title="Resala Charity Organization">
             <p>Volunteer, Social Association in different social and charity activities from 2003 to 2006</p>
-          </div>
-          <div class="sub-container">
+          </section>
+          <section class="sub-container">
             <img src="img/logos/cairo-university-logo.png" alt="cairo university logo">
             <p>Volunteer, Telecom Club for Engineers (TECE), programming project co-leader
               2004</p>
-          </div>
-        </div>
+          </section>
+        </section>
       </section>
       <!-- VOLUNTEERING SECTION END -->
 
       <!-- TECHNICAL SKILLS SECTION START -->
-      <section class="container">
+      <section class="container" id="technical-skills">
         <button type="button" class="accordion-btn">
           <i class="fas fa-toolbox"></i> Technical Skills</button>
-        <div class="section-content">
+        <section class="section-content technical-skills">
           <!-- PROGRAMMING SUBSECTION START-->
-          <div class="sub-container grey-bk">
-            <div class="skills-logos">
+          <section class="sub-container grey-bk">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-c++-100.png" alt="c plus plus logo" title="Microsoft C++">
               <img src="img/technical-skills-logos/icons8-c-sharp-logo-100.png" alt="c sharp logo" title="Microsoft C#">
               <img src="img/technical-skills-logos/icons8-matlab-100.png" alt="matlab logo" title="Matlab">
               <img src="img/technical-skills-logos/oop.png" alt="object oriented programming logo"
                 title="Object Oriented Programming">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Programming</p>
-              <div class="skills-bar">
-                <div class="skills intermediate-level">Intermediate</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills intermediate-level">Intermediate</section>
+              </section>
+            </section>
+          </section>
           <!-- PROGRAMMING SUBSECTION END-->
-
           <!-- WEB DEVELOPMENT SUBSECTION START-->
-          <div class="sub-container">
-            <div class="skills-logos">
+          <section class="sub-container">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-css3-100.png" alt="css logo" title="CSS3">
               <img src="img/technical-skills-logos/icons8-html-5-100.png" alt="html logo" title="HTML">
               <img src="img/technical-skills-logos/icons8-javascript-100.png" alt="javascript logo" title="JavaScript">
               <img src="img/technical-skills-logos/icons8-php-logo-100-2.png" alt="php logo" title="php">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Full Stack Web Development</p>
-              <div class="skills-bar">
-                <div class="skills beginner-level">Beginner</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills beginner-level">Beginner</section>
+              </section>
+            </section>
+          </section>
           <!-- WEB DEVELOPMENT SUBSECTION END-->
-
           <!-- GRAPHICS DESIGN SUBSECTION START-->
-          <div class="sub-container grey-bk">
-            <div class="skills-logos">
+          <section class="sub-container grey-bk">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-adobe-photoshop-100.png" alt="adobe photoshop logo"
                 title="Photoshop">
               <img src="img/technical-skills-logos/icons8-autodesk-autocad-100.png" alt="autocad logo" title="AutoCad">
               <img src="img/technical-skills-logos/icons8-microsoft-visio-2019-100.png" alt="microsoft visio logo"
                 title="Microsoft Visio">
               <img src="img/technical-skills-logos/igrafx.png" alt="igrafx logo" title="iGrafx">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Graphics and CAD Design</p>
-              <div class="skills-bar">
-                <div class="skills beginner-level">Beginner</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills beginner-level">Beginner</section>
+              </section>
+            </section>
+          </section>
           <!-- GRAPHICS DESIGN SUBSECTION END-->
-
           <!-- WORKPLACE ESSENTIALS SUBSECTION START-->
-          <div class="sub-container">
-            <div class="skills-logos">
+          <section class="sub-container">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-apple-logo-100.png" alt="apple mac os logo" title="Mac OS">
               <img src="img/technical-skills-logos/icons8-windows-10-100.png" alt="microsoft windows os logo"
                 title="Microsoft Windows">
@@ -339,19 +585,18 @@ Date of last edit: september xx, 2020 xx:xx am
                 title="Microsoft Office">
               <img src="img/technical-skills-logos/adobe-writer.png" alt="adobe pdf writer logo"
                 title="Adobe PDF Writer">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Workplace Essentials</p>
-              <div class="skills-bar">
-                <div class="skills advanced-level">Advanced</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills advanced-level">Advanced</section>
+              </section>
+            </section>
+          </section>
           <!-- WORKPLACE ESSENTIALS SUBSECTION END-->
-
           <!-- ENTERPRISE COLLABORATION ESSENTIALS SUBSECTION START-->
-          <div class="sub-container grey-bk">
-            <div class="skills-logos">
+          <section class="sub-container grey-bk">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-microsoft-yammer-2019-100.png" alt="microsoft yammer logo"
                 title="Microsoft Yammer">
               <img src="img/technical-skills-logos/icons8-microsoft-teams-2019-100.png" alt="microsoft teams logo"
@@ -360,91 +605,217 @@ Date of last edit: september xx, 2020 xx:xx am
                 title="Microsoft SharePoint">
               <img src="img/technical-skills-logos/microsoft-power-apps.png" alt="microsoft power apps logo"
                 title="Microsoft PowerApps">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Enterprise Collaboration Essentials</p>
-              <div class="skills-bar">
-                <div class="skills intermediate-level">Intermediate</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills intermediate-level">Intermediate</section>
+              </section>
+            </section>
+          </section>
           <!-- ENTERPRISE COLLABORATION ESSENTIALS SUBSECTION END-->
-
           <!-- Enterprise Resources Planning SUBSECTION START-->
-          <div class="sub-container">
-            <div class="skills-logos">
+          <section class="sub-container">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-sap-100.png" alt="SAP logo" title="SAP">
               <img src="img/technical-skills-logos/icons8-microsoft-project-100.png" alt="microsoft project logo"
                 title="Microsoft Project">
               <img src="img/technical-skills-logos/icons8-power-bi-100.png" alt="microsoft powerbi logo"
                 title="Microsoft PowerBI Report">
               <img src="img/technical-skills-logos/qlikview.png" alt="qlikView logo" title="QlikView BI Reports">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Enterprise Resources Planning</p>
-              <div class="skills-bar">
-                <div class="skills intermediate-level">Intermediate</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills intermediate-level">Intermediate</section>
+              </section>
+            </section>
+          </section>
           <!-- Enterprise Resources Planning SUBSECTION END-->
-
           <!-- OIL AND GAS DRILLING SUBSECTION START-->
-          <div class="sub-container grey-bk">
-            <div class="skills-logos">
+          <section class="sub-container grey-bk">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/ex.png" alt="ex logo" title="Explosion Protection">
               <img src="img/technical-skills-logos/offshore-rig-blue.png" alt="offshore rig logo"
                 title="Oil and Gas Drilling">
               <img src="img/technical-skills-logos/icons8-control-panel-100.png" alt="control panel logo"
                 title="Industrial Control and PLC">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Oil and Gas Drilling</p>
-              <div class="skills-bar">
-                <div class="skills advanced-level">Advanced</div>
-              </div>
-            </div>
-          </div>
+              <section class="skills-bar">
+                <section class="skills advanced-level">Advanced</section>
+              </section>
+            </section>
+          </section>
           <!-- OIL AND GAS DRILLING SUBSECTION END-->
-
           <!-- PERSONAL COMPUTERS AND NETWORKS SUBSECTION START-->
-          <div class="sub-container">
-            <div class="skills-logos">
+          <section class="sub-container">
+            <section class="skills-logos">
               <img src="img/technical-skills-logos/icons8-computer-support-100.png" alt="personal computer logo"
                 title="Personal Computer">
               <img src="img/technical-skills-logos/computer-networks.png" alt="computer network logo"
                 title="Computer Networks">
-            </div>
-            <div class="skill-level-container">
+            </section>
+            <section class="skill-level-container">
               <p>Personal Computers and Networks</p>
-              <div class="skills-bar">
-                <div class="skills advanced-level">Advanced</div>
-              </div>
-            </div>
-          </div>
-        </div>
+              <section class="skills-bar">
+                <section class="skills advanced-level">Advanced</section>
+              </section>
+            </section>
+          </section>
+        </section>
         <!-- PERSONAL COMPUTERS AND NETWORKS SUBSECTION END-->
       </section>
       <!-- TECHNICAL SKILLS SECTION END -->
 
+      <!-- PORTFOLIO SECTION START -->
+      <section class="container" id="portfolio">
+        <button type="button" class="accordion-btn">
+          <i class="fas fa-briefcase"></i> Portfolio
+        </button>
+        <section class="section-content portfolio">
+          <section class="slideshow-container">
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/techcareers.jpg" alt="company logo">
+                  <p>TECHCareers</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Web App, Hangman Game</p>
+                  <p>TECHCareers Assignment</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/hangman/hangman.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Desktop App, Gas Analysis Equipment Interface Application</p>
+                  <p>Enterprise Software, &copy;Copyrights Reserved</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/ezgc/ezgc-app.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Embedded PLC App, Gas Analysis Equipment Control Application</p>
+                  <p>Enterprise Software, &copy;Copyrights Reserved</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/ezgcp/ezgcp-plc-menu.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Embedded PLC App, Cabinet Pressurization Control</p>
+                  <p>Enterprise Software, &copy;Copyrights Reserved</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/ezpurge/ezpurge-panel.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Microsoft SharePoint, Team Collaboration and Workflow, Several Sites</p>
+                  <p>Enterprise Software, &copy;Copyrights Reserved</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/SharePoint/sharepoint-demo.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides-portfolio fade">
+              <section class="employment-history">
+                <section class="employer-logo">
+                  <img src="img/logos/halliburton.png" alt="company logo">
+                  <p>HALLIBURTON</p>
+                </section>
+                <section class="portfolio-title">
+                  <p>Desktop App, Automatic Windows + Utilities Apps Installation</p>
+                  <p>Enterprise Software, &copy;Copyrights Reserved</p>
+                </section>
+              </section>
+              <section class="portfolio-img">
+                <img src="img/portfolio/windows-cd/windows-autosetup-cd.png" alt="desktop control application window">
+              </section>
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <!-- FORWARD AND BACKWARD ARROWS -->
+            <a class="prev" id="prev-portfolio">&#10094;</a>
+            <a class="next" id="next-portfolio">&#10095;</a>
+          </section>
+          <br>
+          <!-- DOTS / CIRCLES-->
+          <section class="dots">
+            <span class="dot-portfolio" id="dot-portfolio-1"></span>
+            <span class="dot-portfolio" id="dot-portfolio-2"></span>
+            <span class="dot-portfolio" id="dot-portfolio-3"></span>
+            <span class="dot-portfolio" id="dot-portfolio-4"></span>
+            <span class="dot-portfolio" id="dot-portfolio-5"></span>
+            <span class="dot-portfolio" id="dot-portfolio-6"></span>
+          </section>
+        </section>
+      </section>
+
+      <!-- PORTFOLIO SECTION END -->
+
       <!-- TESTIMONIALS SECTION START -->
-      <section class="container">
+      <section class="container" id="testimonials">
         <button type="button" class="accordion-btn">
           <i class="fas fa-thumbs-up"></i> Testimonials</button>
-        <div class="section-content">
-          <div class="slideshow-container">
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+        <section class="section-content testimonials">
+          <section class="slideshow-container">
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>James Tang</p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Director - Strategic Analysis at Halliburton</p>
                   <p>May 14, 2020, Amr worked with James in the same group</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">I worked closely with Amr on a team project as part of Halliburton’s Business
                 Leadership Development program, an education program administered by Texas A&M’s Mays School of
                 Business. The program is designed to identify and train future leaders of our company. During our 6-week
@@ -458,18 +829,20 @@ Date of last edit: september xx, 2020 xx:xx am
                 would be an asset to any organization. I would happily and confidently support Amr as a positive
                 reference.
               </p>
-            </div>
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>Mahmoud ElKady</p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Former Executive/Vice President at Halliburton</p>
                   <p>May 17, 2020, Mahmoud managed Amr directly</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">Over the last 8 years, I have had the opportunity to work closely with Amr. Amr enjoy
                 a broad management experience in upstream oilfield including Repair and maintenance operations and QHSE
                 management. He has an excellent understanding of operations needs and how to manage a cost-effective
@@ -479,18 +852,20 @@ Date of last edit: september xx, 2020 xx:xx am
                 relationship with his peers and with the management. With Amr’s talents, commitment and experience, he
                 will add value to any organization. It has been always a great pleasure working with him.
               </p>
-            </div>
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>Darcy Criss</p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Global Technical Services at Halliburton</p>
                   <p>August 10, 2015, Darcy worked with Amr in different groups</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">Amr is an extraordinary experienced professional and manager who also serves as an
                 aspiring mentor. Amr
                 exhibits strong interpersonal skills and a unique capacity for compassion. These qualities most notably
@@ -502,18 +877,20 @@ Date of last edit: september xx, 2020 xx:xx am
                 always felt my opinion and ideas were heard and carried forward with absolute accreditation and support.
                 It is my pleasure to recommend Amr.
               </p>
-            </div>
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>Hany Mabrouk</p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Regional PDC - MENA/AP at Halliburton</p>
                   <p>May 10, 2020, Many was senior to Amr but didn’t manage directly</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">Worked closely with Amr for almost seven years.
                 Thanks only to his utmost devotion to his work, he found his way up the ladder to senior management. Amr
                 likes challenges, selectting the biggest obstacles that other choose to ignore, and tackles them hard
@@ -524,18 +901,20 @@ Date of last edit: september xx, 2020 xx:xx am
                 Amr finally has sophisticatedly organized multi layered character, that allows him to adapt swiftly even
                 in very difficult situations
               </p>
-            </div>
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>Abdullah Ameen</p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Service Quality Manager at Halliburton | NEBOSH IGC, EC | ISO 9001, 45001, 14001</p>
                   <p>May 14, 2020, Abdullah reported directly to Amr</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">I had the chance to work with Amr Fouad reporting directly to him in two different
                 roles and later working with him in several projects. Amr’s name rings a bill of dedication, innovation,
                 problem solving, exceeding expectations of self, client, superiors. Amr is the type of manager who
@@ -544,18 +923,20 @@ Date of last edit: september xx, 2020 xx:xx am
                 that Amr is in any project is a pre-confirmation that the output of this project is successful. Amr is
                 great addition to any organization.
               </p>
-            </div>
-            <div class="mySlides fade">
-              <div class="attestant">
-                <div class="avatar">
+            </section>
+            <!-- SLIDE END -->
+            <!-- SLIDE START -->
+            <section class="mySlides fade">
+              <section class="attestant">
+                <section class="avatar">
                   <img src="img/avatar.png" alt="person photo">
                   <p>Ahmed Sanad </p>
-                </div>
-                <div class="attestant-title">
+                </section>
+                <section class="attestant-title">
                   <p>Project Manager at Siemens Energy, PMP®,PMI-RMP®,IPMA®,MSc</p>
                   <p>May 29, 2020, Amr was senior to Ahmed Sanad but didn’t manage directly</p>
-                </div>
-              </div>
+                </section>
+              </section>
               <p class="testimony">Amr is a great role model and motivational leader to work with. He has exceptional
                 expertise in leadership, coaching and motivation. He consistently demonstrated solid work ethics,
                 dedication and sense of a team building skills instead of working for himself.
@@ -566,33 +947,33 @@ Date of last edit: september xx, 2020 xx:xx am
                 professionals, but it seemed to come perfectly naturally to him.
                 Any employee would be lucky to have Amr as a manager, Amr would be an asset to any company!
               </p>
-            </div>
-            <!-- TESTIMONIAL SECTION END -->
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
+            </section>
+            <!-- SLIDE END -->
+            <!-- FORWARD AND BACKWARD ARROWS -->
+            <a class="prev" id="prev">&#10094;</a>
+            <a class="next" id="next">&#10095;</a>
+          </section>
           <br>
-          <!-- The dots/circles -->
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-          </div>
-        </div>
+          <!-- DOTS AND CIRCLES -->
+          <section class="dots">
+            <span class="dot" id="dot-1"></span>
+            <span class="dot" id="dot-2"></span>
+            <span class="dot" id="dot-3"></span>
+            <span class="dot" id="dot-4"></span>
+            <span class="dot" id="dot-5"></span>
+            <span class="dot" id="dot-6"></span>
+          </section>
+        </section>
       </section>
       <!-- TESTIMONIALS SECTION END -->
 
       <!-- CONTACT FORM START -->
       <section class="formcontainer">
         <form action="#" id="contact-form">
-          <div class="pen">
+          <section class="pen">
             <h2>Get in Touch</h2>
             <img src="img/pen-white.png" alt="feather pen image">
-          </div>
+          </section>
           <label for="name" class="screen-reader-text">Name</label>
           <input type="text" id="name" name="name" placeholder="Name" />
           <p class="form-error" id="nameerror">Name is required.</p>
@@ -601,7 +982,7 @@ Date of last edit: september xx, 2020 xx:xx am
           <p class="form-error" id="emailerror">Email is required.</p>
           <p class="form-error" id="emailformaterror">Enter valid Email ID.</p>
           <label for="subject" class="screen-reader-text">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Subjet" />
+          <input type="text" id="subject" name="subject" placeholder="Subject" />
           <p class="form-error" id="subjecterror">Subject is required</p>
           <label for="message" class="screen-reader-text">Message</label>
           <textarea id="message" name="message" placeholder="Message"></textarea>
@@ -612,22 +993,22 @@ Date of last edit: september xx, 2020 xx:xx am
         <!-- CONTACT FORM END -->
 
         <!-- CONTACT DETAILS START -->
-        <div class="contact">
-          <div class="contact-info">
+        <section class="contact" id="contact-info">
+          <section class="contact-info">
             <h3>Contact Info</h3>
-            <p><i class="fas fa-phone"></i> 780-123-4567</p>
-            <a href="info@noemail.com"><i class="fa fa-envelope"></i> info@noemail.com</a>
-            <p><i class="fab fa fa-map-marker"></i> 01 02ST SW,Edmonton,AB A1B2C3,CA</p>
-          </div>
-          <div class="socialmedia">
+            <p><i class="fas fa-mobile-alt"></i>780-123-4567</p>
+            <a href="info@noemail.com"><i class="fa fa-envelope"></i>info@noemail.com</a>
+            <p><i class="fas fa-map-marked-alt"></i>01 02ST SW,Edmonton,AB A1B2C3,CA</p>
+          </section>
+          <section class="socialmedia">
             <h3>Follow & Connect On</h3>
-            <a href="https://ca.linkedin.com/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/"><i class="fab fa-github-square"></i></a>
-            <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
-            <a href="https://stackoverflow.com/"><i class="fab fa-stack-overflow"></i></a>
-            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram-square"></i></a>
-          </div>
-        </div>
+            <a href="https://ca.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://stackoverflow.com/" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a>
+          </section>
+        </section>
         <!-- CONTACT DETAILS END -->
       </section>
     </section>
@@ -636,13 +1017,14 @@ Date of last edit: september xx, 2020 xx:xx am
   <!-- FOOTER -->
   <footer>
     <p>&copy; Copyright Amr Fouad 2020</p>
-    <div class="icons-credit">
+    <section class="icons-credit">
       <p>
-        Icons Credit goes to: <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
-        and <a target="_blank" href="https://icons8.com">Icons8</a></p>
-      <p><a href="http://www.freepik.com">Map Designed by pikisuperstar / Freepik</a></p>
-      <p>Image by <a href="www.rawpixel.com">rawpixel</a></p>
-    </div>
+        Icons Credit goes to: <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          target="_blank">Freepik</a>
+        and <a href="https://icons8.com" target="_blank">Icons8</a></p>
+      <p><a href="http://www.freepik.com" target="_blank">Map Designed by pikisuperstar / Freepik</a></p>
+      <p>Image by <a href="www.rawpixel.com" target="_blank">rawpixel</a></p>
+    </section>
   </footer>
 </body>
 

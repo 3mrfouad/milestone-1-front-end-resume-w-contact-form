@@ -1,4 +1,3 @@
-/* cspell:disable */
 /*=============================================
 =      Front-End Project DOCSTRING            =
 =============================================*/
@@ -6,14 +5,14 @@
 /* Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september xx, 2020 xx:xx am */
+Date of last edit: september 08, 2020 12:00 am
+ */
 
 /*=====  End of Section comment block  ======*/
 
 /*=============================================
     HTML CSS RESET | IMPORT OTHER CSS FILES
 =============================================*/
-
 @import url("normalize.css");
 /**
  * Citation: Borrowed code to reset browsers defaults.
@@ -26,219 +25,144 @@ Date of last edit: september xx, 2020 xx:xx am */
 /**
  * Citation: Css code that must be in the project folders per FontAwesome documentation.
  * Source: https://fontawesome.com
- * Reason: Import FontAwesome icons into the project to fulfill the requirements/challanges
+ * Reason: Import FontAwesome icons into the project to fulfill the requirements/challenges
  */
 
 /*=============================================
-        OUTLINES TO BE REMOVED LATER
+                   FONT FACE                  =
 =============================================*/
-
-* {
-/*   outline: 1px solid #ff0000;
- */  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*   color: #333333;
- */
-}
-/* h1 {
-  outline: 1px solid #d0ff00;
-}
-ul {
-  outline: 1px solid #0000ff;
-}
-li {
-  outline: 1px solid #00ff2a;
-}
-nav {
-  outline: 1px solid #c0e0e0;
-}
-a {
-  outline: 1px solid #d5e21d;
-}
-header {
-  outline: 1px solid #00ffff;
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
 }
 
-footer {
-  outline: 1px solid #00feff;
-}
-section {
-  outline: 1px solid #008cff;
-}
-main {
-  outline: 1px solid #f50404;
-}
-.main-wrapper {
-  outline: 1px solid #54a8c2;
-}
- */
-/* div {
-  outline: 1px solid #00ff62;
-}
-P {
-  outline: 1px solid #0000ff;
-}
-img {
-  outline: 1px solid #ffbb00;
-} 
-form {
-  outline: 1px solid #0004ff;
-}*/
-body {
-  outline: 1px solid #7786c9;
-}
 /*=============================================
-=           HEADER SECTIONS                   =
+=             HTML SECTION                    =
+=============================================*/
+html {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*=============================================
+=             BODY SECTION                    =
 =============================================*/
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
   background-image: url("../img/page-background.jpg");
   background-repeat: repeat;
-  position: relative;
+  position: relative; /* ! Position is used here for Nav only */
+  width: 100%;
 }
+
+/*=============================================
+=             HEADER SECTION                  =
+=============================================*/
 i {
   font-size: inherit;
 }
-.floating-hello {
-  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
-  position: fixed; /*! Use of "Position" permitted per assignment guidelines in nav  */
-  top: 100px;
-  left: 10px;
-  opacity: 0.8;
-  width:auto;
-  max-width: 300px;
-  height: auto;
-}
-/* h1 {
-  
-  max-width: 565px;
-  width: 100%;
-  text-align: center;
-   color: #333333; 
-color: #ffffff;
-
-} */
-
 h1 {
-  opacity: 1;
-  max-width: 565px;
-  width: 100%;
-  padding: 2.5%;
-  background-color: #adadad;
-  color: #000000;
-  font-weight: bold;
+  background: #adadad;
+  color: #1c110b;
+  font-weight: 700;
   text-align: center;
-  mix-blend-mode: screen;
+  font-family: fantasy;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  width: 100%;
 }
 header {
-  /*   background-color: #ffe04f;
- */
-  background: #ffffff8c;
   background-image: url("../img/header-background.png");
-  max-width: 565px;
+  opacity: 0.7;
   width: 100%;
-  /* position: -webkit-sticky; */ /*! Use of "Position" permitted per assignment guidelines in nav  */
-  /* position: sticky; */ /*! Use of "Position" permitted per assignment guidelines in nav  */
-  /* top: 0px; */
 }
-main {
-  max-width: 565px;
-  display: flex;
-  flex-direction: row;
-}
+
+/*=============================================
+=             MAIN SECTION                    =
+=============================================*/
 .main-wrapper {
   display: flex;
   flex-direction: column;
   order: 2;
-  margin: 0;
 }
-section {
-  max-width: 565px;
-  margin: 2%;
-}
-/* section button i {
-  color: #333333;
-} */
 .bold-text-emphasis {
   font-weight: 700;
-  color: #22120d !important;
-  font-size: 1.25em;
-  opacity: .79;
+  color: #2b0202 !important;
+  font-size: 1.2em;
+  opacity: 0.79;
+  text-shadow: 2px 2px 4px #1c110b;
 }
 .bold-text {
+  color: #2b0202;
   font-weight: 700;
+  letter-spacing: 0.1em;
 }
 .italic-text {
   font-style: italic;
-  font-size: 0.9em;
-  font-weight: 600;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
+
 /*=============================================
-=            OVERLAY NAV MENU                 =
+=            POP-UP NAV MENU                 =
 =============================================*/
-.overlay {
-  display: flex;
-  justify-content: center;
-  height: 0;
-  width: 100%;
-  position: fixed;
+.popupbtn,
+.popup,
+.popup-content {
+  position: fixed;   /* ! Position is used here for Nav only */
+  bottom: 60px;
+  right: 15px;
+  background: #e1d2a5;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #333333;
-  background-color: #333333e6;
-  overflow-x: hidden;
-  transition: 0.5s;
 }
-.overlay-nav-content {
-  position: relative;
-  top: 15%;
-  width: 100%;
-  margin-top: 30px;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.overlay i {
-  margin-right: 1%;
-  font-size: 36px;
-  color: #818181;
-  display: inline-block;
-  transition: 0.3s;
-}
-.overlay a:hover,
-.overlay a:focus {
-  color: #ffffff;
-}
-.overlay #closebtn {
-  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-#openbtn {
-  color: #333333;
-}
-#header-nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-h1 + p {
-  font-size: 30px;
+.popupbtn {
+  opacity: 0.5;
+  bottom: 5px;
+  color: #1c110b;
   cursor: pointer;
   height: max-content;
+  font-size: 30px;
+  border: none;
+  padding: 12px;
+  border-radius: 10%;
 }
+.popup {
+  display: block;
+}
+.popup-content {
+  display: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #1c110b;
+}
+.popup-content a {
+  color: #1c110b;
+  font-weight: 700;
+  padding: 5%;
+  text-decoration: none;
+  display: block;
+}
+.popup-content a:hover {
+  background: #ddd;
+}
+.popup:hover .popup-content
+{
+  display: block;
+}
+.popup:hover .popupbtn {
+  background: #1c110b;
+  color: #d6b865;
+}
+
 /*=============================================
 =           RESUME SECTIONS COMMON            =
 =============================================*/
@@ -246,24 +170,16 @@ h1 + p {
   display: flex;
   flex-direction: column;
   max-height: 100%;
+  margin: 2%;
 }
 .accordion-btn {
-  max-width: 565px;
   text-align: left;
   margin: 0.25em 0.25em 0 0.25em;
   padding: 2%;
   text-transform: uppercase;
-  letter-spacing: -0.025em;
-  /* accordion */
-  /* background-color: #ffe04f; */
-  /* background-color: #1c110b; */
-  background: #ffffff7e;
+  background: #ffffff8c;
   color: #3d2112;
-  
-  /*  background: #ffffff8c; */
-  font-weight: 900;
-  /*  color: #333333; */
-  /* color:#472f23; */
+  font-weight: 700;
   cursor: pointer;
   transition: background 650ms;
 }
@@ -275,8 +191,8 @@ h1 + p {
 }
 /* accordion */
 .accordion-btn-active {
-  /* background: #bcce92; */
-  background: #ffffff8c;
+  background: #1c110b;
+  color: #ffffff8c;
 }
 /* accordion */
 .accordion-btn-active::after {
@@ -285,40 +201,26 @@ h1 + p {
 .container .section-content {
   max-width: 565px;
   margin: 0 0.25em 0.25em 0.25em;
-  /* padding-left: 0.25em; need for Ps not divs*/
-  /*   line-height: 1.5em;
- */ /* accordion */
+  /* accordion */
   display: flex;
   flex-direction: column;
-/*   max-height: auto;
- */  background-color: #faebbbde;
+  background: #fae6bbde;
   color: #333333;
 }
 /* accordion */
 .accordion-btn-active + .section-content {
   display: none;
 }
-.resume-sec-btn {
-  width: 20%;
-  height: auto;
-  text-align: center;
-  margin: 0.5em;
-  padding: 0 0.5em 0 0.5em;
-  border-radius: 0.25em;
-  outline-color: transparent;
-  float: right;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #a0a0a0;
-  color: #333333;
+.accordion-btn:hover {
+  background: #1c110b;
+  color: #ffffff8c;
 }
-.container .section-content a:hover {
-  background-color: #333333 !important;
-  color: #ffffff;
-}
+
 /*=============================================
-=            SUBCONTAINER STYLING             =
-=============================================*/
+=         SUB-CONTAINERS STYLING               =
+=    USED IN EDUCATION, CERTIFICATION,        =
+=      VOLUNTEERING, TECHNICAL SKILLS          =
+==============================================*/
 .sub-container {
   display: flex;
   flex-direction: row;
@@ -328,27 +230,30 @@ h1 + p {
   height: 100%;
 }
 .sub-container p {
-  margin: 0 1% 0 2.5%;
+  margin: 0 1% 0 5%;
   font-size: 12px;
   width: 100%;
-  line-height: 1.5em;
+  line-height: 1.25em;
 }
 .sub-container ul {
-  margin: 0 1% 0 2%;
+  margin: 0 1% 0 5%;
   font-size: 12px;
   width: 100%;
   list-style-type: square;
   list-style-position: inside;
-  line-height: 1.5em;
+  line-height: 1.25em;
 }
 .sub-container img {
   width: 50px;
-  height: 50px;
-  max-height: 200px;
-  max-width: 200px;
+  height: auto;
+  max-height: 100px;
+  max-width: 100px;
 }
+
 /*=============================================
-=           ABOUT SECTIONS                   =
+=               ABOUT SECTION                 =  
+=             OBJECTIVE SECTION               = 
+=         CORE COMPETENCIES SECTION           =
 =============================================*/
 .about,
 .objective,
@@ -358,85 +263,53 @@ h1 + p {
 .about p,
 .objective p {
   padding: 0 0 2.5% 0;
-  line-height: 1.3em;
+  line-height: 1.25em;
   text-align: justify;
-  text-justify: distribute; /* !ERROR */
-
 }
-/*=============================================
-=           OBJECTIVE SECTION                 =
-=============================================*/
-
-/*=============================================
-=         CORE COMPETENCIES SECTION           =
-=============================================*/
 .core-competencies p {
   padding: 0 0 2.5% 0;
 }
-.core-competencies ul{
-  padding: 0 1% 0 2%;
-  font-size: 16px;
-  width: 100%;
-  list-style-type: square;
-  list-style-position: inside;
-  line-height: 1.75em;
-}
-/*=============================================
-=         EMPLOYMENT SECTION                  =
-=============================================*/
-.employment-duties ul {
-  padding: 0 1% 0 2%;
-  font-size: 12px;
-  width: 100%;
+.core-competencies ul {
+  padding: 0 1% 2.5% 2%;
+  font-size: 14px;
   list-style-type: square;
   list-style-position: inside;
   line-height: 1.5em;
 }
+
+/*=============================================
+=         EMPLOYMENT SECTION                  =
+=============================================*/
+.employment-duties ul {
+  padding: 0 2% 0 2%;
+  font-size: 12px;
+  list-style-type: square;
+  list-style-position: inside;
+  line-height: 1.5em;
+}
+
 /*=============================================
 =     INTERNATIONAL EXPERIENCE SECTION        =
 =============================================*/
 .int-experience img {
   width: 100%;
   height: auto;
-  max-width: 565px;
 }
-
-/*=============================================
-=            EDUCATION SECTION                =
-=============================================*/
-
-/*=============================================
-=            CERTIFICATIONS SECTION           =
-=============================================*/
-
-/*=============================================
-=            VOLUNTEERING SECTION             =
-=============================================*/
-/* 
 
 /*=============================================
 =            TECHNICAL SKILLS SECTION         =
 =============================================*/
-/* 
-.skills {
-  text-align: left;
-  font-size:12px;
-  font-weight: 700;
-  padding: 0 0 0 2.5% ;
-  line-height: 15px;
-  color: #eef5ec; 
-} */
 .beginner-level {
-  width: calc(100% / 2.5);
-  background-color: #ff5959;
+  width: calc(100% / 2.3);
+  background: #ff5959;
   color: #ffffff;
   padding: 2.5%;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .intermediate-level {
   width: calc(200% / 3);
-  background-color: #ffa500;
+  background: #ffa500;
   color: #ffffff;
   padding: 2.5%;
   font-size: 12px;
@@ -444,33 +317,35 @@ h1 + p {
 }
 .advanced-level {
   width: 90%;
-  background-color: #4caf50;
+  background: #4caf50;
   color: #ffffff;
   padding: 2.5%;
   font-size: 12px;
   font-weight: 700;
 }
 .skill-level-container {
-  margin: 0 0 0 2.5%;
   width: 50%;
 }
 .skills-bar {
-  background-color: rgb(255, 255, 182);
+  background: #ffffb6;
 }
 .skill-level-container p {
-  padding: 0 0 2.5% 0;
+  margin: 0;
+  padding: 0 0 10% 2.5%;
   font-size: 14px;
   font-weight: 700;
 }
 .skills-logos {
   width: 45%;
 }
-
 .section-content .grey-bk {
-  background-color: #eee5b6;
+  background: #eee5b6;
 }
+
 /*=============================================
-=           TESTMONIAL SECTION STYLING        =
+=           SLIDE SHOW SECTION STYLING        =
+=      USED IN EMPLOYMENT, TESTIMONIAL AND   =
+=                  PORTFOLIO                  =
 =============================================*/
 .section-content {
   width: fit-content;
@@ -480,28 +355,33 @@ h1 + p {
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
+  position: relative;   /* ! Position is un-avoidable not to complicate the slide show code */
   margin: auto;
   width: 100%;
 }
 /* Hide the images by default */
-.mySlides {
+.mySlides,
+.mySlides-emp,
+.mySlides-portfolio {
   display: flex;
   flex-direction: column;
   padding: 2.5%;
-  height: 450px;
+  height: 525px;
 }
 /* Next & previous buttons */
 .prev,
-.next {
+.next,
+.prev-emp,
+.next-emp,
+.prev-portfolio,
+.next-portfolio {
   cursor: pointer;
-  position: absolute;
+  position: absolute; /* ! Position is un-avoidable not to complicate the slide show code */
   top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 8px;
-  color: #00000038;
+  color: #2b020271;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -509,40 +389,39 @@ h1 + p {
   user-select: none;
 }
 /* Position the "next button" to the right */
-.next {
+.next,
+.next-emp,
+.next-portfolio {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
-.next:hover {
-  background-color: #000000cc;
-}
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+.next:hover,
+.prev-emp:hover,
+.next-emp:hover,
+.prev-portfolio:hover,
+.next-portfolio:hover {
+  background: #00000044;
 }
 /* The dots/bullets/indicators */
-.dot {
+.dot,
+.dot-emp,
+.dot-portfolio {
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
-  background: #ffffff7e;
+  background: #3d2112be;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background 0.6s ease;
 }
 .active,
-.dot:hover {
-  /*background-color: #717171;*/
+.dot:hover,
+.dot-emp:hover,
+.dot-portfolio:hover {
+  /*background: #717171;*/
   background: #ffffff;
 }
 /* Fading animation */
@@ -552,7 +431,6 @@ h1 + p {
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {
     opacity: 0.4;
@@ -569,53 +447,81 @@ h1 + p {
     opacity: 1;
   }
 }
-.attestant, .employment-history{
+.attestant,
+.employment-history {
   display: flex;
   flex-direction: row;
+  padding: 0 0 4% 0;
 }
-.avatar, .employer-logo {
+.avatar,
+.employer-logo {
   display: flex;
   flex-direction: column;
-  /*   align-items: center;
-  justify-content: center; */
   width: 40%;
-  padding: 2.5% 0 0 2.5%;
+  padding: 2.5% 0 0 0;
 }
-.avatar img , .employer-logo img{
+.avatar img,
+.employer-logo img {
   width: 50px;
-  height: 50px;
+  height: auto;
 }
-.avatar p, .employer-logo p {
+.avatar p,
+.employer-logo p {
   font-weight: 700;
   font-size: 12px;
   padding: 5% 0 0 0;
 }
-.attestant-title, .employment-title {
+.attestant-title,
+.employment-title,
+.portfolio-title {
   width: 100%;
-  padding: 5% 0.5% 0 0;
+  padding: 2.5% 0.5% 0 2%;
   font-size: 12px;
   line-height: 1.2em;
 }
-.attestant-title p:first-child, .employment-title p:first-child{
+.attestant-title p:first-child,
+.employment-title p:first-child,
+.portfolio-title p:first-child {
   font-weight: 700;
   font-size: 14px;
 }
-.attestant-title p:last-child, .employment-title p:last-child{
+.attestant-title p:last-child,
+.employment-title p:last-child,
+.portfolio-title p:last-child {
   padding: 2.5% 0 0 0;
-  font-size: 12px;
+  font-size: 10px;
   font-style: italic;
   color: #757575;
 }
-.testimony, .employment-duties {
+.testimony,
+.employment-duties {
   padding: 2.5%;
-  font-size: 14px;
+  font-size: 12px;
   text-align: justify;
-  text-justify: distribute; 
   line-height: 1.5em;
   overflow: auto;
 }
+.dots{
+  text-align:center;
+  padding: 2.5% 0 2.5% 0;
+}
+
 /*=============================================
-=    CONTACT FORM AND CONTACE SECTIONS CSS    =
+=           PORTFOLIO SECTION STYLING        =
+=============================================*/
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+}
+.portfolio-img {
+  padding: 2.5%;
+}
+.mySlides-portfolio {
+  height: 100%;
+}
+
+/*=============================================
+= CONTACT FORM AND CONTACT INFO SECTIONS CSS  =
 =============================================*/
 .pen {
   display: flex;
@@ -628,9 +534,10 @@ h1 + p {
   width: 100px;
   height: auto;
   order: 1;
-  padding: 0 0 0 2.5%;
+  padding: 0 0 0 5%;
 }
 .formcontainer {
+  width:100%;
   display: flex;
   flex-direction: column;
   padding: 2.5% 2.5% 0 2.5%;
@@ -639,22 +546,21 @@ h1 + p {
 .formcontainer h3 {
   color: #ffffff;
   text-align: left;
-  padding: 2.5% 0 0 0;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 .formcontainer h3 {
-  padding: 2.5% 0 5% 0;
+  padding: 0 0 5% 0;
 }
 .formcontainer h2 {
   order: 2;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .formcontainer form {
   width: 100%;
   display: flex;
   flex-direction: column;
   order: 1;
-  padding: 3% 0 0 0;
+  padding: 12.5% 0 0 0;
 }
 .formcontainer form input[type="submit"] {
   border: none;
@@ -690,7 +596,7 @@ h1 + p {
 .formcontainer form textarea:hover {
   border-radius: 0 10px 0 10px;
   transition: all 0.3s;
-  background-color: #3d271a7e;
+  background: #3d271a7e;
   color: #ffffff;
 }
 .formcontainer form input::placeholder {
@@ -718,30 +624,35 @@ textarea {
 .contact-info {
   display: flex;
   flex-direction: column;
-  padding: 10% 0 0 0;
+  padding: 15% 0 0 5%;
 }
 .socialmedia {
   display: inline-block;
   order: 1;
-  padding: 5% 0 15% 0;
+  padding: 12.5% 0 25% 5%;
 }
 .contact-info p,
 .contact-info a {
-  margin: 0 0 2.5% 5%;
-  font-size: 1.5em;
+  padding: 0 0 5% 2.5%;
+  font-size: 1.2em;
   color: #ffffff;
+}
+.contact-info i {
+  padding: 0 2.5% 0 0;
+  font-size: 1.25em;
 }
 .socialmedia i {
   justify-self: flex-end;
   color: #ffffff;
 }
 .socialmedia i:first-child {
-  font-size: 3em;
+  font-size: 2em;
   justify-self: flex-end;
 }
 .socialmedia a {
   padding: 0 0 0 5%;
 }
+
 /*=============================================
 =            FORM ERROR MESSAGES              =
 =============================================*/
@@ -750,7 +661,7 @@ textarea {
   padding: 1.5%;
   width: max-content;
   text-align: left;
-  background-color: #ff0000;
+  background: #ff0000;
   font-style: italic;
   color: #ffffff;
   font-size: 0.75em;
@@ -769,17 +680,17 @@ textarea {
   top: -10px;
 }
 .empty-field-error {
-  background-color: #ffdddd;
+  background: #ffdddd;
   border-style: dotted;
   border-color: #ff0000;
   border-width: 2px;
   border-radius: 10px 0 10px 0;
 }
+
 /*=============================================
 =                 FOOTER                      =
 =============================================*/
 footer {
-  max-width: 565px;
   width: 100%;
   text-align: center;
   padding: 2.5% 2.5% 0 2.5%;
@@ -796,6 +707,7 @@ footer {
   text-decoration-color: #f6fa03;
   color: #ffffff;
 }
+
 /*=============================================
 =            MEDIA QUERIES                =
 =============================================*/
@@ -829,10 +741,44 @@ footer {
 }
 .formcontainer form {
   width: 50%;}
-} */
+}
+
+.dropdown {
+  position: -webkit-sticky;
+  position: fixed;
+  bottom: 100%;
+  right: 15%;
+  display: inline-block;
+}
+
+.floating-hello {
+  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  
+  top: 25px;
+  left: 55px;
+  opacity: 0.8;
+  width: auto;
+  max-width: 300px;
+  height: auto;
+}
+*/
+
+/* @media only screen and (min-width: 600px) {
+  body,
+  header,
+  section,
+  .container,
+  .container .section-content,
+  .accordion-btn,
+  .sub-container,
+  .int-experience img,
+  footer {
+    width:1000px;
+    max-width: 1000px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-.floating-hello{
-  display: none;
-}
-}
+  .floating-hello {
+    display: none;
+  }
+} */
