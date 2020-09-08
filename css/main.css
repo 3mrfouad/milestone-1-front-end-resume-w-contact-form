@@ -5,7 +5,7 @@
 /* Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september 08, 2020 12:00 am
+Date of last edit: september 08, 2020 8:59 am
  */
 
 /*=====  End of Section comment block  ======*/
@@ -48,7 +48,6 @@ html {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   scroll-behavior: smooth;
 }
-
 /*=============================================
 =             BODY SECTION                    =
 =============================================*/
@@ -59,9 +58,8 @@ body {
   background-image: url("../img/page-background.jpg");
   background-repeat: repeat;
   position: relative; /* ! Position is used here for Nav only */
-  width: 100%;
+  width: initial;
 }
-
 /*=============================================
 =             HEADER SECTION                  =
 =============================================*/
@@ -76,7 +74,7 @@ h1 {
   font-family: fantasy;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 36px;
   line-height: 1em;
   width: 100%;
 }
@@ -85,7 +83,9 @@ header {
   opacity: 0.7;
   width: 100%;
 }
-
+.floating-hello {
+  display: none;
+}
 /*=============================================
 =             MAIN SECTION                    =
 =============================================*/
@@ -97,9 +97,9 @@ header {
 .bold-text-emphasis {
   font-weight: 700;
   color: #2b0202 !important;
-  font-size: 1.2em;
+  font-size: 1.25em;
   opacity: 0.79;
-  text-shadow: 2px 2px 4px #1c110b;
+  text-shadow: 1px 1px 4px #1c110b60;
 }
 .bold-text {
   color: #2b0202;
@@ -108,7 +108,7 @@ header {
 }
 .italic-text {
   font-style: italic;
-  font-size: 0.85em;
+  font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 0.05em;
 }
@@ -126,14 +126,14 @@ header {
   z-index: 1;
 }
 .popupbtn {
-  opacity: 0.5;
+  opacity: 0.7;
   bottom: 5px;
   color: #1c110b;
   cursor: pointer;
   height: max-content;
-  font-size: 30px;
+  font-size: 18px;
   border: none;
-  padding: 12px;
+  padding: 8px;
   border-radius: 10%;
 }
 .popup {
@@ -154,10 +154,12 @@ header {
 .popup-content a:hover {
   background: #ddd;
 }
-.popup:hover .popup-content {
+.popup:hover .popup-content,
+.popup:active .popup-content {
   display: block;
 }
-.popup:hover .popupbtn:active {
+.popupbtn:hover,
+.popupbtn:active {
   background: #1c110b;
   color: #d6b865;
   opacity: 0.8;
@@ -173,6 +175,7 @@ header {
   margin: 2%;
 }
 .accordion-btn {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   text-align: left;
   margin: 0.25em 0.25em 0 0.25em;
   padding: 2%;
@@ -199,8 +202,8 @@ header {
   content: "\25be";
 }
 .container .section-content {
-  max-width: 565px;
   margin: 0 0.25em 0.25em 0.25em;
+  padding: 2%;
   /* accordion */
   display: flex;
   flex-direction: column;
@@ -231,13 +234,13 @@ header {
 }
 .sub-container p {
   margin: 0 1% 0 5%;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   line-height: 1.25em;
 }
 .sub-container ul {
   margin: 0 1% 0 5%;
-  font-size: 12px;
+  font-size: 14px;
   width: 100%;
   list-style-type: square;
   list-style-position: inside;
@@ -264,17 +267,16 @@ header {
 .objective p {
   padding: 0 0 2.5% 0;
   line-height: 1.25em;
-  text-align: justify;
 }
 .core-competencies p {
   padding: 0 0 2.5% 0;
 }
 .core-competencies ul {
   padding: 0 1% 2.5% 2%;
-  font-size: 14px;
   list-style-type: square;
   list-style-position: inside;
-  line-height: 1.5em;
+  line-height: 1.25em;
+  letter-spacing: 0.1em;
 }
 
 /*=============================================
@@ -282,7 +284,7 @@ header {
 =============================================*/
 .employment-duties ul {
   padding: 0 2% 0 2%;
-  font-size: 12px;
+  font-size: 14px;
   list-style-type: square;
   list-style-position: inside;
   line-height: 1.5em;
@@ -312,7 +314,7 @@ header {
   background: #ffa500;
   color: #ffffff;
   padding: 2.5%;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .advanced-level {
@@ -320,7 +322,7 @@ header {
   background: #4caf50;
   color: #ffffff;
   padding: 2.5%;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
 }
 .skill-level-container {
@@ -331,8 +333,7 @@ header {
 }
 .skill-level-container p {
   margin: 0;
-  padding: 0 0 10% 2.5%;
-  font-size: 14px;
+  padding: 7.5% 0 7.5% 2.5%;
   font-weight: 700;
 }
 .skills-logos {
@@ -366,7 +367,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2.5%;
-  height: 525px;
+  height: 650px;
 }
 /* Next & previous buttons */
 .prev,
@@ -457,8 +458,9 @@ header {
 .employer-logo {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding: 2.5% 0 0 0;
+  width: 45%;
+  padding: 0 0 0 2.5%;
+  align-items: center;
 }
 .avatar img,
 .employer-logo img {
@@ -468,38 +470,40 @@ header {
 .avatar p,
 .employer-logo p {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   padding: 5% 0 0 0;
 }
 .attestant-title,
 .employment-title,
 .portfolio-title {
   width: 100%;
-  padding: 2.5% 0.5% 0 2%;
-  font-size: 12px;
+  padding: 0 0 0 5%;
   line-height: 1.2em;
 }
 .attestant-title p:first-child,
 .employment-title p:first-child,
 .portfolio-title p:first-child {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
 }
 .attestant-title p:last-child,
 .employment-title p:last-child,
 .portfolio-title p:last-child {
   padding: 2.5% 0 0 0;
-  font-size: 10px;
+  font-size: 12px;
   font-style: italic;
   color: #757575;
 }
 .testimony,
 .employment-duties {
   padding: 2.5%;
-  font-size: 12px;
-  text-align: justify;
+  font-size: 14px;
   line-height: 1.5em;
   overflow: auto;
+}
+.testimony {
+  text-align: justify;
+  text-justify: inter-character;
 }
 .dots {
   text-align: center;
@@ -517,7 +521,7 @@ header {
   padding: 2.5%;
 }
 .mySlides-portfolio {
-  height: 100%;
+  height: 350px;
 }
 
 /*=============================================
@@ -546,7 +550,7 @@ header {
 .formcontainer h3 {
   color: #ffffff;
   text-align: left;
-  font-size: 1.75em;
+  font-size: 32px;
 }
 .formcontainer h3 {
   padding: 0 0 5% 0;
@@ -563,6 +567,7 @@ header {
   padding: 12.5% 0 0 0;
 }
 .formcontainer form input[type="submit"] {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   border: none;
   height: 50px;
   text-align: center;
@@ -656,20 +661,20 @@ textarea {
 /*=============================================
 =         RESUME PDF Download Button          =
 =============================================*/
-.resume-download-btn {
-  order: 3;
-}
 .resume-download-btn a {
+  order: 3;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
   position: fixed; /* ! Position is used here for Nav purposes only */
-  bottom: 5px;
-  left: 15px;
+  transform: rotate(270deg);
+  bottom: 52.5px;
+  left: -55px;
+  font-size: 14px;
   background: #e1d2a5;
   color: #1c110b;
   z-index: 1;
   opacity: 0.5;
   cursor: pointer;
   height: max-content;
-  font-size: 22px;
   border: none;
   padding: 12px;
   border-radius: 10px;
@@ -723,13 +728,17 @@ footer {
   width: 100%;
   text-align: center;
   padding: 2.5% 2.5% 0 2.5%;
-  margin: 0 2.5% 2.5% 2.5%;
+  margin: 0 2.5% 25% 2.5%;
   color: #ffffff;
   font-weight: 700;
 }
+footer > p {
+  font-size: 18px;
+}
 .icons-credit p {
-  margin: 2.5% 0 0 0;
-  font-size: 75%;
+  margin: 1.5% 0 0 0;
+  font-size: 10px;
+  letter-spacing: 0.1em;
   color: #ffffff;
 }
 .icons-credit a {
@@ -738,76 +747,306 @@ footer {
 }
 
 /*=============================================
-=            MEDIA QUERIES                =
+=            MEDIA QUERIES - TABLET           =
 =============================================*/
-/* 
 @media only screen and (min-width: 600px) {
-  html {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  .main-wrapper {
+    margin: 7.5% 0 0 0;
   }
   header,
-  section,
-  ul {
-    max-width: 850px;
-    align-content: center;
-    justify-content: center;
+  main,
+  .section,
+  .accordion-btn,
+  .int-experience img,
+  .slideshow-container,
+  footer,
+  .container .section-content {
+    max-width: 1080px;
+    width: 100%;
   }
-  header {
-    max-height: 100px;
+  h1 {
+    font-size: 55px;
+    font-weight: 900;
   }
-  .container p {
-    max-width: 650px;
+  .about p,
+  .objective P,
+  .core-competencies ul,
+  .core-competencies p {
+    line-height: 1.5em;
+    font-size: 20px;
+  }
+  .sub-container p,
+  .sub-container ul {
+    font-size: 20px;
+  }
+  .sub-container img {
+    width: 100px;
   }
   .accordion-btn {
-    max-width: 650px;
-    width:100%;
+    font-size: 24px;
+    margin: 0;
+  }
+  .container .section-content {
+    margin: 0;
+  }
+  .employment-duties ul {
+    font-size: 20px;
+  }
+  .avatar img,
+  .employer-logo img {
+    width: 100px;
+  }
+  .avatar p,
+  .employer-logo p {
+    font-size: 18px;
+  }
+  .mySlides,
+  .mySlides-emp,
+  .mySlides-portfolio {
+    height: 700px;
+  }
+  .attestant-title,
+  .employment-title,
+  .portfolio-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .attestant-title p:first-child,
+  .employment-title p:first-child,
+  .portfolio-title p:first-child {
+    font-size: 26px;
+    line-height: 1.3em;
+  }
+  .attestant-title p:last-child,
+  .employment-title p:last-child,
+  .portfolio-title p:last-child {
+    font-size: 18px;
+  }
+  .testimony,
+  .employment-duties {
+    font-size: 20px;
+  }
+  .sub-container .skill-level-container p {
+    font-size: 26px;
+    padding: 0 0 5% 0;
+  }
+  .advanced-level,
+  .intermediate-level,
+  .beginner-level {
+    font-size: 20px;
+  }
+  .icons-credit p {
+    margin: 1.5% 0 0 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .resume-download-btn a {
+    transform: rotate(270deg);
+    bottom: 60px;
+    left: -60px;
+    font-size: 16px;
+  }
+  footer {
+    margin: 0 0 5% 0;
+  }
+  footer > p {
+    font-size: 22px;
+  }
+  .icons-credit p {
+    margin: 1%;
+    font-size: 12px;
+  }
+  .contact-info {
+    padding: 8% 0 5% 5%;
+  }
+  .contact-info a,
+  .contact-info p {
+    padding: 0 0 2.5% 0;
+    margin: 0;
+    font-size: 1.5em;
+  }
+  .socialmedia {
+    padding: 5% 0 12.5% 5%;
+  }
+  .popupbtn {
+    font-size: 30px;
+    padding: 8px;
+  }
+  .formcontainer h2,
+  .formcontainer h3 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 55px;
+    width: 100%;
+  }
+  .socialmedia a {
+    font-size: 30px;
+  }
+  .contact-info p,
+  .contact-info a {
+    font-size: 26px;
+    margin-left: 5%;
+  }
+  #contact-form {
+    padding-left: 20%;
+  }
+  .pen img {
+    padding-left: 0;
+  }
+  form textarea,
+  form input {
+    width: 70%;
+  }
+  form textarea {
+    height: 15em;
+  }
+  .formcontainer form input[type="submit"] {
+    font-size: 30px;
+  }
+}
+/*=============================================
+=      MEDIA QUERIES - DESKTOP / LAPTOP       =
+=============================================*/
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 70px;
+  }
+  .core-competencies ul {
+    line-height: 1.5em;
+    font-size: 24px;
+  }
+  .section-content p,
+  .section-content ul,
+  .sub-container p,
+  .sub-container ul {
+    font-size: 28px;
+  }
+  .sub-container img {
+    width: 200px;
+  }
+  .accordion-btn {
+    font-size: 38px;
+    padding: 1% 2% 1% 2%;
+  }
+  .employment-duties ul {
+    padding: 0;
+    line-height: 1.5em;
+    font-size: 24px;
+  }
+  .avatar img,
+  .employer-logo img {
+    width: 200px;
+  }
+  .avatar p,
+  .employer-logo p {
+    font-size: 26px;
+  }
+  .attestant-title p:first-child,
+  .employment-title p:first-child,
+  .portfolio-title p:first-child {
+    font-size: 32px;
+    line-height: 1.3em;
+  }
+  .attestant-title p:last-child,
+  .employment-title p:last-child,
+  .portfolio-title p:last-child {
+    font-size: 24px;
+  }
+  .sub-container .skill-level-container p {
+    font-size: 30px;
+    padding: 0 0 5% 0;
+  }
+  .advanced-level,
+  .intermediate-level,
+  .beginner-level {
+    font-size: 20px;
+  }
+  .icons-credit p {
+    margin: 1.5% 0 0 0;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  .resume-download-btn a {
+    transform: rotate(270deg);
+    bottom: 85px;
+    left: -70px;
+    font-size: 24px;
+  }
+  footer {
+    margin: 10% 0 5% 0;
+  }
+  footer > p {
+    font-size: 22px;
+  }
+  .icons-credit p {
+    margin: 1.5%;
+  }
+  .dot,
+  .dot-emp,
+  .dot-emp {
+    width: 25px;
+    height: 25px;
+  }
+  .prev,
+  .next,
+  .prev-emp,
+  .next-emp,
+  .prev-portfolio,
+  .next-portfolio {
+    font-size: 30px;
+    padding: 15px;
+  }
+  .floating-hello {
+    display: block;
+    position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  */
+    top: 25px;
+    left: 5px;
+    opacity: 0.8;
+    width: auto;
+    max-width: 250px;
+    height: auto;
+  }
+  .mySlides,
+  .mySlides-emp,
+  .mySlides-portfolio {
+    height: 1080px;
   }
   .formcontainer {
-  display: flex;
-  flex-direction: row;
-}
-.formcontainer form {
-  width: 50%;}
-}
-
-.dropdown {
-  position: -webkit-sticky;
-  position: fixed;
-  bottom: 100%;
-  right: 15%;
-  display: inline-block;
-}
-
-.floating-hello {
-  position: absolute; /*! Use of "Position" permitted per assignment guidelines in nav  
-  top: 25px;
-  left: 55px;
-  opacity: 0.8;
-  width: auto;
-  max-width: 300px;
-  height: auto;
-}
-*/
-
-/* @media only screen and (min-width: 600px) {
-  body,
-  header,
-  section,
-  .container,
-  .container .section-content,
-  .accordion-btn,
-  .sub-container,
-  .int-experience img,
-  footer {
-    width:1000px;
-    max-width: 1000px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .formcontainer form {
+    order: 2;
+  }
+  .contact {
+    order: 1;
+  }
+  #contact-form {
+    padding: 2.5% 5% 0 5%;
+    width: 50%;
+  }
+  .contact {
+    width: 50%;
+  }
+  .formcontainer form input,
+  .formcontainer form textarea {
+    width: 100%;
+  }
+  .formcontainer h2,
+  .formcontainer h3 {
+    font-size: 45px;
+    width: 100%;
+  }
+  .socialmedia a {
+    font-size: 30px;
+  }
+  .contact-info p,
+  .contact-info a {
+    font-size: 28px;
+    margin-left: 5%;
+  }
+  .container {
+    margin: 3.5%;
   }
 }
-
-@media only screen and (max-width: 600px) {
-  .floating-hello {
-    display: none;
-  }
-} */

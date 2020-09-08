@@ -4,7 +4,7 @@
 Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september 08, 2020 12:00 am
+Date of last edit: september 08, 2020 8:59 am
 
 ==============================================================================================
 
@@ -112,4 +112,12 @@ Images Credit goes to:
 
 ==============================================================================================
 
-Form labels, NOTE THAT SCREEN READER TEXT CLASS WAS USED TO HIDE THE FORM LABELS
+*! orm labels, NOTE THAT SCREEN READER TEXT CLASS WAS USED TO HIDE THE FORM LABELS
+
+==============================================================================================
+
+*! Note: I have used position with three elements in the entire project:
+
+1 - For navigation, that was allowed by the Rubric anyway. The NAV menu style is pop up style fixed at the right bottom corner of the page.
+2 - For the form errors arrows to visual aid the error message and add clarity to where is the error exactly within the form with short description... Please note, for that one, I spoke to Warren and he approved it.
+3 - Finally, for the hello floating photo and that was the most logical way not to complicate the page layout.

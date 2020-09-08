@@ -5,7 +5,7 @@ Front-End Project DOCSTRING
 Title: Front-End Project
 Purpose:Resume with Validating Contact Form
 Author: Amr Fouad
-Date of last edit: september 08, 2020 12:00 am
+Date of last edit: september 08, 2020 8:59 am
 */
 
 /*
