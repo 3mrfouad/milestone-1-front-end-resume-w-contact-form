@@ -22,6 +22,10 @@ https://www.w3schools.com/howto/howto_js_slideshow.asp
 https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
 https://www.w3schools.com/howto/howto_css_dropdown.asp
 https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html
+https://www.w3schools.com/tags/att_a_download.asp
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+
 
 ==============================================================================================
 
@@ -107,3 +111,5 @@ Images Credit goes to:
     - Back ground images by www.rawpixel.com
 
 ==============================================================================================
+
+Form labels, NOTE THAT SCREEN READER TEXT CLASS WAS USED TO HIDE THE FORM LABELS

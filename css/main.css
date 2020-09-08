@@ -119,7 +119,7 @@ header {
 .popupbtn,
 .popup,
 .popup-content {
-  position: fixed;   /* ! Position is used here for Nav only */
+  position: fixed; /* ! Position is used here for Nav only */
   bottom: 60px;
   right: 15px;
   background: #e1d2a5;
@@ -154,13 +154,13 @@ header {
 .popup-content a:hover {
   background: #ddd;
 }
-.popup:hover .popup-content
-{
+.popup:hover .popup-content {
   display: block;
 }
-.popup:hover .popupbtn {
+.popup:hover .popupbtn:active {
   background: #1c110b;
   color: #d6b865;
+  opacity: 0.8;
 }
 
 /*=============================================
@@ -355,7 +355,7 @@ header {
 }
 /* Slideshow container */
 .slideshow-container {
-  position: relative;   /* ! Position is un-avoidable not to complicate the slide show code */
+  position: relative; /* ! Position is un-avoidable not to complicate the slide show code */
   margin: auto;
   width: 100%;
 }
@@ -501,8 +501,8 @@ header {
   line-height: 1.5em;
   overflow: auto;
 }
-.dots{
-  text-align:center;
+.dots {
+  text-align: center;
   padding: 2.5% 0 2.5% 0;
 }
 
@@ -537,7 +537,7 @@ header {
   padding: 0 0 0 5%;
 }
 .formcontainer {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 2.5% 2.5% 0 2.5%;
@@ -653,6 +653,35 @@ textarea {
   padding: 0 0 0 5%;
 }
 
+/*=============================================
+=         RESUME PDF Download Button          =
+=============================================*/
+.resume-download-btn {
+  order: 3;
+}
+.resume-download-btn a {
+  position: fixed; /* ! Position is used here for Nav purposes only */
+  bottom: 5px;
+  left: 15px;
+  background: #e1d2a5;
+  color: #1c110b;
+  z-index: 1;
+  opacity: 0.5;
+  cursor: pointer;
+  height: max-content;
+  font-size: 22px;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  outline-color: transparent;
+  text-decoration: none;
+}
+.resume-download-btn a:hover {
+  background: #1c110b;
+  color: #d6b865;
+  opacity: 0.8;
+}
 /*=============================================
 =            FORM ERROR MESSAGES              =
 =============================================*/

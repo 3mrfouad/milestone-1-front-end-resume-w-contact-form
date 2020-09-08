@@ -53,7 +53,6 @@ document.querySelectorAll(".accordion-btn").forEach((button) => {
 /* EVENT LISTENER */
 getInTouchForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(message.value.toString());
   if (GetInTouchFormValidation()) {
     const emailMessageMod = encodeURIComponent(
       `From: ${name.value}` +
@@ -72,6 +71,7 @@ getInTouchForm.addEventListener("submit", (event) => {
             ON LOAD INITIALIZATION FUNCTION
 *==================================================
 */
+/*NO INPUTS, THE FUNCTION RESTS THE PAGE SPECIALLY THE FORM SECTION WHEN FIRST OPEN OR REFRESHED */
 function InitializePage() {
   name.value = "";
   emailID.value = "";
@@ -84,6 +84,16 @@ function InitializePage() {
             FORM VALIDATION FUNCTION
 *==================================================
 */
+/**
+ *
+ * VALIDATION FORM TO STOP THE FORM GETTING SUBMITTED WITH EMPTY FIELDS
+ * OR WRONG EMAIL FORMAT OR WITH SWEAR WORDS
+ * IF ALL VALIDATIONS ARE PASS, THEN THE FORM WILL OPEN THE EMAIL CLIENT
+ * THE METHOD IS SERIES OF IF DECISION STATEMENTS, AND AND ERROR COUNTER IS
+ * USED TO INDICATE IF ANY VALIDATION ERROR SPOTTED.
+ *
+ * */
+
 function GetInTouchFormValidation() {
   const swearWords = ["feldercarb", "frack", "skinjob", "vulgacarb"];
   let errorsCntr = 0;
@@ -136,7 +146,7 @@ function GetInTouchFormValidation() {
   if (swearingCntr != 0) {
     swearWordErrorMsg.style.display = "block";
     alert(
-      "This is a professional website, and use of inappropriate words won't be tolerated",
+      "This is a professional website, and use of inappropriate words won't be tolerated.",
       "Warning"
     );
     errorsCntr++;
@@ -160,6 +170,13 @@ function GetInTouchFormValidation() {
           EMAIL FORMAT VALIDATION FUNCTION
 *==================================================
 */
+
+/**
+ *
+ * THIS FUNCTION IS USING REGULAR EXPRESSIONS TO CHECK EMAIL FORMAT PER EXPLANATION BELOW IN THE CITATION SECTION.
+ *
+ */
+
 function ValidateEmail() {
   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailID.value)) {
     return true;
@@ -228,6 +245,16 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
+
+/**
+ *
+ * THIS FUNCTION LOOPS OVER THE SLIDES IN THE SLIDES CONTAINER, IT IS BEING CALLED WHEN THE FORWARD OR BACKWARD ARROWS
+ * ARE CLICKED OR WHEN ONE OF THE BOTTOM CIRCLES IS CLICKED.
+ * IT INCREMENT OR DECREMENT THE SLIDE DEPENDING ON THE CALLING DOT ID.
+ *
+ *
+ */
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -288,6 +315,16 @@ function plusSlidesEmp(n) {
 function currentSlideEmp(n) {
   showSlidesEmp((slideIndexEmp = n));
 }
+
+/**
+ *
+ * THIS FUNCTION LOOPS OVER THE SLIDES IN THE SLIDES CONTAINER, IT IS BEING CALLED WHEN THE FORWARD OR BACKWARD ARROWS
+ * ARE CLICKED OR WHEN ONE OF THE BOTTOM CIRCLES IS CLICKED.
+ * IT INCREMENT OR DECREMENT THE SLIDE DEPENDING ON THE CALLING DOT ID.
+ *
+ *
+ */
+
 function showSlidesEmp(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides-emp");
@@ -356,6 +393,16 @@ function plusSlidesPortfolio(n) {
 function currentSlidePortfolio(n) {
   showSlidesPortfolio((slideIndexPortfolio = n));
 }
+
+/**
+ *
+ * THIS FUNCTION LOOPS OVER THE SLIDES IN THE SLIDES CONTAINER, IT IS BEING CALLED WHEN THE FORWARD OR BACKWARD ARROWS
+ * ARE CLICKED OR WHEN ONE OF THE BOTTOM CIRCLES IS CLICKED.
+ * IT INCREMENT OR DECREMENT THE SLIDE DEPENDING ON THE CALLING DOT ID.
+ *
+ *
+ */
+
 function showSlidesPortfolio(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides-portfolio");
@@ -403,3 +450,18 @@ document.getElementById("dot-portfolio-6").addEventListener("click", () => {
   currentSlidePortfolio(6);
 });
 
+/*
+*==================================================
+        DIRECT EMAIL (CLICK ON EMAIL ID)
+*==================================================
+*/
+
+/**
+ *
+ * EVENT LISTENER INCASE THE USER CLICKED THE EMAIL IN THE CONTACT INFO SECTION, IN SUCH CASE THE EMAIL CLIENT WOULD
+ * OPEN WITH MY EMAIL ID IN THE "TO" SECTION
+ *  *
+ */
+document.getElementById("direct-email").addEventListener("click", () => {
+  window.location.href = `mailto:info@noemail.com?`;
+});
